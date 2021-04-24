@@ -1,3 +1,7 @@
+a {
+  transition: all 250ms ease-in-out;
+  color: var(--color-accent);
+}
 a:link::before {
   content: '\0027AA';
   padding-right: 5px;
@@ -8,12 +12,15 @@ nav a:link::before {
 }
 a:visited {
   color: var(--color-link-visited);
+  color: var(--color-visited);
 }
 @media (hover: hover) and (pointer: fine) {
   a:hover {
     color: var(--color-link-hover);
+    color: var(--color-text);
   }
 }
 a:active {
   color: var(--color-link-active);
+  color: var(--color-active);
 }

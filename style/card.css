@@ -5,11 +5,13 @@
   /* Positioning */
   /* Display */
   background: var(--color-dark-pink);
-  border: 2px solid;
+  background: var(--sandy-brown);
+  border: 2px solid var(--color-border);
+  box-shadow: 5px 10px var(--color-shadow);
 }
-.card:nth-child(even) {
+/* .card:nth-child(even) {
   background: var(--color-green);
-}
+} */
 .card h3,
 .card__body,
 .card__footer {
@@ -40,7 +42,7 @@ strong + p {
   /* Layout */
   display: flex;
   flex-wrap: wrap;
-  gap: var(--default-padding);
+  gap: 30px;
   /* Box-model */
   padding: var(--default-padding) 0;
   /* Display */
@@ -51,6 +53,8 @@ strong + p {
   /* Box-model */
   padding: 5px var(--default-padding);
   /* Display */
+  background: var(--color-parent-bg);
   border: 2px solid;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px var(--color-shadow);
+  /* box-shadow: 5px 10px var(--powdered-cocoa); */
 }

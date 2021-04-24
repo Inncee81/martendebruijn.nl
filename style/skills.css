@@ -3,7 +3,7 @@
   /* Layout */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--default-padding);
+  gap: 30px;
   /* Box-model */
   /* Positioning */
   /* Display */
@@ -16,11 +16,14 @@
   /* Positioning */
   /* Display */
   background: var(--color-dark-pink);
-  border: 2px solid;
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  box-shadow: 5px 10px var(--color-shadow);
 }
+/*
 .skill-card:nth-child(odd) {
   background: var(--color-green);
-}
+} */
 .skill-card__progress-bar {
   /* Parent layout */
   /* Layout */
@@ -31,6 +34,7 @@
   /* Positioning */
   /* Display */
   background: hsl(0, 0%, 100%);
+  background: var(--color-parent-bg);
   border: 2px solid;
 }
 .progress-bar__fill {
@@ -44,6 +48,7 @@
   /* Positioning */
   /* Display */
   background: var(--color-blue);
+  background: var(--color-text);
   border-right: 2px solid;
 }
 .bar-no-border {

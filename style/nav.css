@@ -10,6 +10,7 @@
   position: fixed;
   /* Display */
   background: var(--color-blue);
+  background: var(--color-bg);
   border-top: 3px solid;
   border-bottom: 1px solid;
 }
@@ -50,6 +51,7 @@ nav li {
   padding: 0 var(--default-padding);
   /* Display */
   /* border-left: 2px solid; */
+  color: var(--color-text);
 }
 nav a {
   /* Parent layout */
@@ -60,7 +62,6 @@ nav a {
   /* Positioning */
   /* Display */
   border-left: 2px solid hsl(0, 0%, 0%);
-  color: var(--link-active);
   font-weight: 500;
   text-decoration: none;
 }
@@ -84,5 +85,6 @@ nav a:active {
 @media (hover: hover) and (pointer: fine) {
   nav a:hover {
     background: hsl(205, 100%, 82%);
+    background: var(--color-parent-bg);
   }
 }

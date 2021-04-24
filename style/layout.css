@@ -28,7 +28,13 @@ header img {
   max-width: 185px;
   /* Positioning */
   /* Display */
-  border: 2px solid;
+  border: 2px solid var(--color-border);
+}
+section {
+  padding-bottom: 30px;
+}
+section > h2 {
+  padding-bottom: var(--default-padding);
 }
 main {
   /* Parent layout */
@@ -44,7 +50,7 @@ main {
   /* Layout */
   align-items: start;
   display: grid;
-  gap: var(--default-padding);
+  gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   /* Box-model */
   min-height: 100px;
