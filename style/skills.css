@@ -1,0 +1,72 @@
+.skills-list {
+  /* Parent layout */
+  /* Layout */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--default-padding);
+  /* Box-model */
+  /* Positioning */
+  /* Display */
+}
+.skill-card {
+  /* Parent layout */
+  /* Layout */
+  /* Box-model */
+  padding: var(--default-padding);
+  /* Positioning */
+  /* Display */
+  background: var(--color-dark-pink);
+  border: 2px solid;
+}
+.skill-card:nth-child(odd) {
+  background: var(--color-green);
+}
+.skill-card__progress-bar {
+  /* Parent layout */
+  /* Layout */
+  /* Box-model */
+  display: block;
+  width: 100%;
+  min-height: 15px;
+  /* Positioning */
+  /* Display */
+  background: hsl(0, 0%, 100%);
+  border: 2px solid;
+}
+.progress-bar__fill {
+  /* Parent layout */
+  /* Layout */
+  /* Box-model */
+  display: block;
+  min-width: 1%;
+  max-width: 100%;
+  min-height: 15px;
+  /* Positioning */
+  /* Display */
+  background: var(--color-blue);
+  border-right: 2px solid;
+}
+.bar-no-border {
+  border-right: none;
+}
+.bar-html {
+  width: 75%;
+}
+.bar-css {
+  width: 75%;
+}
+.bar-js {
+  width: 60%;
+}
+.bar-php {
+  width: 40%;
+}
+.bar-ai {
+  width: 70%;
+}
+.bar-xd {
+  width: 70%;
+}
+.bar-id {
+  width: 50%;
+}

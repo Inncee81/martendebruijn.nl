@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Roboto Mono and Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- All stylesheets will be minified and cascaded in a later stage -->
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/variabeles.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/type.css" />
+    <link rel="stylesheet" href="style/anchors.css" />
+    <link rel="stylesheet" href="style/layout.css" />
+    <link rel="stylesheet" href="style/nav.css" />
+    <link rel="stylesheet" href="style/skills.css" />
+    <link rel="stylesheet" href="style/card.css" />
+    <title>Portfolio | Marten de Bruijn</title>
+  </head>
+  <body>
+    <!-- 
+    TODO:
+    - [ ] make the navigation links the whole "button"
+    - [ ] add layout to the header
+    - [ ] padding between sections
+    - [ ] better state colors on active/interactive elements
+    - [ ] minifying and concatenate stylesheets and compression
+    - [ ] provide different img sizes
+    - [ ] add transition to the hover effects
+    - [ ] add focus styling
+    - [ ] add footer styling
+    - [ ] add a11y ([aria-]labels etc.)
+    - [ ] add css prefixes
+    -->
+    <div class="main-nav">
+      <span class="main-nav__name">Marten de Bruijn</span>
+      <nav>
+        <ul>
+          <li class="nav-item-mobile"><a href="#">Menu</a></li>
+          <a href="#vaardigheden"><li class="nav-item">Vaardigheden</li></a>
+          <a href="#projecten"><li class="nav-item">Projecten</li></a>
+          <a href="#artikelen"><li class="nav-item">Artikelen</li></a>
+          <a href="#contacten"><li class="nav-item">Contact</li></a>
+        </ul>
+      </nav>
+    </div>
+    <!-- div.main-nav -->
+
+    <div class="content">
+      <header>
+        <h1>Portfolio – Marten de Bruijn</h1>
+        <h2>Web-designer en front-end developer</h2>
+        <img
+          src="/img/profiel-foto.png"
+          alt="Portretfoto van Marten de Bruijn"
+        />
+      </header>
+
+      <main>
+        <section id="vaardigheden">
+          <h2>Technieken en vaardigheden</h2>
+          <ul class="skills-list">
+            <li class="skill-card">
+              <div class="skill-card__header">
+                <h4>HTML</h4>
+              </div>
+              <div class="skill-card__progress-bar">
+                <div class="progress-bar__fill bar-html"></div>
+                <!-- div.progress-bar__fill -->
+              </div>
+              <!-- div.skill-card__progress-bar -->
+            </li>
+            <li class="skill-card">
+              <div class="skill-card__header">
+                <h4>CSS</h4>
+              </div>
+              <div class="skill-card__progress-bar">
+                <div class="progress-bar__fill bar-css"></div>
+                <!-- div.progress-bar__fill -->
+              </div>
+              <!-- div.skill-card__progress-bar -->
+            </li>
+            <li class="skill-card">
+              <div class="skill-card__header">
+                <h4>JavaScript</h4>
+              </div>
+              <div class="skill-card__progress-bar">
+                <div class="progress-bar__fill bar-js"></div>
+                <!-- div.progress-bar__fill -->
+              </div>
+              <!-- div.skill-card__progress-bar -->
+            </li>
+            <li class="skill-card">
+              <div class="skill-card__header">
+                <h4>PHP</h4>
+              </div>
+              <div class="skill-card__progress-bar">
+                <div class="progress-bar__fill bar-php"></div>
+                <!-- div.progress-bar__fill -->
+              </div>
+              <!-- div.skill-card__progress-bar -->
+            </li>
+            <li class="skill-card">
+              <div class="skill-card__header">
+                <h4>Adobe Illustrator</h4>
+              </div>
+              <div class="skill-card__progress-bar">
+                <div class="progress-bar__fill bar-ai"></div>
+                <!-- div.progress-bar__fill -->
+              </div>
+              <!-- div.skill-card__progress-bar -->
+            </li>
+            <li class="skill-card">
+              <div class="skill-card__header">
+                <h4>Adobe XD</h4>
+              </div>
+              <div class="skill-card__progress-bar">
+                <div class="progress-bar__fill bar-xd"></div>
+                <!-- div.progress-bar__fill -->
+              </div>
+              <!-- div.skill-card__progress-bar -->
+            </li>
+            <li class="skill-card">
+              <div class="skill-card__header">
+                <h4>Adobe InDesign</h4>
+              </div>
+              <div class="skill-card__progress-bar">
+                <div class="progress-bar__fill bar-id"></div>
+                <!-- div.progress-bar__fill -->
+              </div>
+              <!-- div.skill-card__progress-bar -->
+            </li>
+          </ul>
+        </section>
+
+        <section id="projecten">
+          <h2>Geselecteerde projecten</h2>
+          <div class="projecten-content">
+            <div class="card">
+              <div class="card__header">
+                <div class="card__header__title">
+                  <h3>Zichtbaar</h3>
+                </div>
+                <!-- div.card__header__title -->
+                <div class="card__header__hero">
+                  <img src="/img/aspektu-website-1440x1920.png" alt="" />
+                </div>
+                <!-- div.card__header__hero -->
+              </div>
+              <!-- div.card__header -->
+              <div class="card__body">
+                <strong>
+                  Hoe kunnen huidige niet-toegankelijke websites toegankelijker
+                  gemaakt worden zodat deze beter te gebruiken zijn met een
+                  schermlezer door blinden en slechtzienden?
+                </strong>
+                <p>
+                  Producten en diensten worden steeds meer gedigitaliseerd en we
+                  worden steeds meer aangewezen op onze online-vaardigheden.
+                  Doordat het huidige web vooral visueel is ingericht, is het
+                  gebruik maken van het web voor veel mensen niet zo
+                  vanzelfsprekend. Zo ook voor blinden en slechtzienden, die met
+                  behulp van een schermlezer het web gebruiken. Veel websites
+                  zijn niet toegankelijk genoeg om te gebruiken met een
+                  schermlezer. Zichtbaar is een extensie voor in de browser die
+                  drie digitale toegankelijkheidsproblemen oplost.
+                </p>
+              </div>
+              <!-- div.card__body -->
+              <div class="card__footer">
+                <ul class="card__link-list">
+                  <li><a href="#">Avans CMD</a></li>
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+                <ul class="card__tag-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <!-- div.card__footer -->
+            </div>
+            <!-- div.card -->
+
+            <div class="card">
+              <div class="card__header">
+                <div class="card__header__title">
+                  <h3>Ontdek Kunst bij Kleur</h3>
+                </div>
+                <!-- div.card__header__title -->
+                <div class="card__header__hero">
+                  <img src="img/ontdek-kunst-bij-kleur-1440x1920.png" alt="" />
+                </div>
+                <!-- div.card__header__hero -->
+              </div>
+              <!-- div.card__header -->
+              <div class="card__body">
+                <strong>
+                  Ontdek Kunst bij Kleur is een webapplicatie waarme je op basis
+                  van kleur kunst van het Rijksmuseum kunt ontdekken. De
+                  applicatie maakt gebruik van de API van het Rijksmuseum. Bij
+                  Ontdek Kunst bij Kleur is Server Side Rendering toegepast en
+                  het is een Progressive Web Application (PWA).
+                </strong>
+                <!-- <p> </p> -->
+              </div>
+              <!-- div.card__body -->
+              <div class="card__footer">
+                <ul class="card__link-list">
+                  <li><a href="#">Demo</a></li>
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+                <ul class="card__tag-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <!-- div.card__footer -->
+            </div>
+            <!-- div.card -->
+
+            <div class="card">
+              <div class="card__header">
+                <div class="card__header__title">
+                  <h3>Marijn's Effenaar Planner</h3>
+                </div>
+                <!-- div.card__header__title -->
+                <div class="card__header__hero">
+                  <img
+                    src="img/marijns-effenaar-planner-1440x1920.png"
+                    alt=""
+                  />
+                </div>
+                <!-- div.card__header__hero -->
+              </div>
+              <!-- div.card__header -->
+              <div class="card__body">
+                <strong>
+                  Marijn’s Effenaar planner is een drag-and-drop concert planner
+                  exclusief ontworpen voor Marijn. Marijn heeft een motorische
+                  stoornis en veel moeite met fijne motoriek. Deze drag-and-drop
+                  is zo ontworpen dat deze voor hem goed te gebruiken is.
+                </strong>
+                <!-- <p> </p> -->
+              </div>
+              <!-- div.card__body -->
+              <div class="card__footer">
+                <ul class="card__link-list">
+                  <li><a href="#">Demo</a></li>
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+                <ul class="card__tag-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <!-- div.card__footer -->
+            </div>
+            <!-- div.card -->
+
+            <div class="card">
+              <div class="card__header">
+                <div class="card__header__title">
+                  <h3>Ringo.pro</h3>
+                </div>
+                <!-- div.card__header__title -->
+                <div class="card__header__hero">
+                  <img src="img/ringo-pro-1920x1440.png" alt="" />
+                </div>
+                <!-- div.card__header__hero -->
+              </div>
+              <!-- div.card__header -->
+              <div class="card__body">
+                <strong>
+                  Films, TV-series, games, trailers, reclames, sociale media,
+                  allemaal voorbeelden van waar muziek gebruikt wordt. De mensen
+                  die zoeken naar de perfecte muziek voor bij bewegend beeld
+                  zijn music supervisors. Een music supervisor is iemand die
+                  muziek zoekt en de juiste mensen weet te benaderen om de
+                  juiste licenties te krijgen.
+                </strong>
+                <p>
+                  Het huidige proces vergt veel tijd en is onhandig. Vaak is het
+                  niet duidelijk wie de rechten heeft en je hebt te maken met
+                  allerlei verschillende wetten uit verschillende landen. Hierom
+                  wil I Love Mayhem dit proces vereenvoudigen met het idee
+                  Ringo. Samen met een andere student Nick Meijer, hebben wij in
+                  vijf weken een proof-of-concept vormgegeven.
+                </p>
+                <p>
+                  Met het prototype kan men zoeken naar muziek, afspeellijsten
+                  en projecten aanmaken, de details van een nummer zien en ook
+                  kan men de nummers filtreren en krijgt men aanbevelingen op
+                  basis van de zoekopdracht.
+                </p>
+              </div>
+              <!-- div.card__body -->
+              <div class="card__footer">
+                <ul class="card__link-list">
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+                <ul class="card__tag-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <!-- div.card__footer -->
+            </div>
+            <!-- div.card -->
+          </div>
+          <!-- div.projecten-content -->
+        </section>
+
+        <section id="artikelen">
+          <h2>Laatste artikelen</h2>
+          <ul>
+            <li>
+              <a href="#">CSS oplossing voor :hover op touchscreens</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <!-- div.content -->
+
+    <footer>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="#">Medium</a></li>
+        <li><a href="#">CodePen</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="mailto:marten@martendebruijn.nl">Mail</a></li>
+        <li><a href="#">Dribbble</a></li>
+        <li><a href="#">CSS Battle</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+a:link::before {
+  content: '\0027AA';
+  padding-right: 5px;
+}
+nav a:link::before {
+  content: '';
+  padding-right: 0;
+}
+a:visited {
+  color: var(--color-link-visited);
+}
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: var(--color-link-hover);
+  }
+}
+a:active {
+  color: var(--color-link-active);
+}

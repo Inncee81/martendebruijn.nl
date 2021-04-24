@@ -1,0 +1,13 @@
+:root {
+  --default-padding: 15px;
+  --color-neutral: hsl(60, 100%, 97%);
+  --text-color-default: hsl(60, 3%, 24%);
+  --color-blue: hsl(205, 100%, 92%);
+  --color-light-pink: hsl(1, 100%, 92%);
+  --color-dark-pink: hsl(0, 12%, 66%);
+  --color-green: hsl(60, 16%, 65%);
+  --color-link: hsl(211, 82%, 47%);
+  --color-link-visited: hsl(238, 45%, 49%);
+  --color-link-hover: hsl(200, 33%, 35%);
+  --color-link-active: hsl(0, 45%, 49%);
+}

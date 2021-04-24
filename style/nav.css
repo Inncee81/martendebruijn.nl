@@ -1,0 +1,88 @@
+.main-nav {
+  /* Parent layout */
+  /* Layout */
+  display: flex;
+  /* Box-model */
+  height: 50px;
+  width: 100%;
+  padding-left: var(--default-padding);
+  /* Positioning */
+  position: fixed;
+  /* Display */
+  background: var(--color-blue);
+  border-top: 3px solid;
+  border-bottom: 1px solid;
+}
+.main-nav__name {
+  /* Parent layout */
+  /* Layout */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* Box-model */
+  min-width: 187px;
+  /* Positioning */
+  /* Display */
+}
+.main-nav nav {
+  /* Parent layout */
+  flex: 2;
+  /* Layout */
+  /* Box-model */
+  /* Positioning */
+  /* Display */
+}
+nav ul {
+  /* Parent layout */
+  /* Layout */
+  display: flex;
+  justify-content: flex-end;
+  /* Box-model */
+  height: 100%;
+  /* Positioning */
+  /* Display */
+}
+nav li {
+  /* Layout */
+  /* display: flex; */
+  /* align-items: center; */
+  /* Box-model */
+  padding: 0 var(--default-padding);
+  /* Display */
+  /* border-left: 2px solid; */
+}
+nav a {
+  /* Parent layout */
+  /* Layout */
+  display: flex;
+  align-items: center;
+  /* Box-model */
+  /* Positioning */
+  /* Display */
+  border-left: 2px solid hsl(0, 0%, 0%);
+  color: var(--link-active);
+  font-weight: 500;
+  text-decoration: none;
+}
+nav a:active {
+  color: var(--link-active);
+}
+.nav-item-mobile {
+  display: none;
+  /* Hide (hamburger) menu item when there is enough space to show the full menu */
+}
+@media only screen and (max-width: 600px) {
+  .nav-item {
+    display: none;
+    /* Hide normal menu items when there isn't enough space to show the full menu */
+  }
+  .nav-item-mobile {
+    display: flex;
+    /* Show (hamburger) menu item when there isn't enough space to show the full menu */
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  nav a:hover {
+    background: hsl(205, 100%, 82%);
+  }
+}

@@ -1,0 +1,19 @@
+h1,
+h2 {
+  font-family: 'Roboto Mono', monospace;
+}
+h1 {
+  font-size: 3rem;
+}
+h2,
+h3 {
+  font-size: 1.5rem;
+}
+h3,
+h4 {
+  font-weight: 600;
+}
+strong,
+.main-nav__name {
+  font-weight: 700;
+}
