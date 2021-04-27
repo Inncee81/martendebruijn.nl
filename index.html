@@ -4,6 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="google web designer, responsive web design, web design company, webdesigner, web design services, web design and development, web design studio, development, front-end developer, developer, portfolio"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="author" content="Marten de Bruijn" />
+    <meta name="copyright" content="Marten de Bruijn" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icons/favicon-96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icons/apple-icon-57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icons/apple-icon-60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icons/apple-icon-72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icons/apple-icon-76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icons/apple-icon-114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icons/apple-icon-120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icons/apple-icon-144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icons/apple-icon-152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-icon-180.png"
+    />
+    <meta name="msapplication-TileColor" content="#00ccff" />
+    <meta name="msapplication-TileImage" content="/icons/apple-icon-144.png" />
+    <!-- <link rel="manifest" href="manifest.json"> -->
     <!-- Roboto Mono and Roboto -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -23,19 +97,28 @@
     <title>Portfolio | Marten de Bruijn</title>
   </head>
   <body>
+    <!-- Ik zoek werk! Stuur een mail naar: marten@martendebruijn.nl -->
+
     <!-- 
     TODO:
     - [x] make the navigation links the whole "button"
     - [ ] add layout to the header
-    - [ ] padding between sections
-    - [ ] better state colors on active/interactive elements
-    - [ ] minifying and concatenate stylesheets and compression
+    - [x] padding between sections
+    - [x] better state colors on active/interactive elements
+    - [ ] minify and concatenate stylesheets and add compression
     - [ ] provide different img sizes
-    - [ ] add transition to the hover effects
-    - [ ] add focus styling (for now browser default is enough)
+    - [x] add transition to the hover effects
+    - [-] add focus styling (for now browser default is enough)
     - [ ] add footer styling
     - [ ] add a11y ([aria-]labels etc.)
     - [ ] add css prefixes
+    - [ ] implement solution for anchor links sections behind my fixed nav header
+    - [ ] convert to ejs components
+    - [ ] add PWA and offline availability
+    - [ ] add "real" values underneath the CSS properties for browser compatibility
+    - [ ] make sure iframe/video content is displayed properly in a card
+    - [ ] On mobile: remove borders from the non-displayed-items
+    - [ ] make the (hamburger) menu working
     -->
     <div class="main-nav">
       <span class="main-nav__name">Marten de Bruijn</span>
@@ -148,7 +231,12 @@
                 </div>
                 <!-- div.card__header__title -->
                 <div class="card__header__hero">
-                  <img src="/img/aspektu-website-1440x1920.png" alt="" />
+                  <iframe
+                    src="https://player.vimeo.com/video/520383156"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen=""
+                  ></iframe>
                 </div>
                 <!-- div.card__header__hero -->
               </div>
@@ -174,12 +262,25 @@
               <!-- div.card__body -->
               <div class="card__footer">
                 <ul class="card__link-list">
-                  <li><a href="#">Avans CMD</a></li>
-                  <li><a href="#">GitHub</a></li>
+                  <li>
+                    <a
+                      href="https://www.avanscmd.nl/work/marten-de-bruijn-zichtbaar"
+                      >Avans CMD</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/martendebruijn/zichtbaar-extensie"
+                      >GitHub</a
+                    >
+                  </li>
                 </ul>
                 <ul class="card__tag-list">
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Chrome Extensie</li>
+                  <li>Toegankelijkheid</li>
                 </ul>
               </div>
               <!-- div.card__footer -->
@@ -193,7 +294,10 @@
                 </div>
                 <!-- div.card__header__title -->
                 <div class="card__header__hero">
-                  <img src="img/ontdek-kunst-bij-kleur-1440x1920.png" alt="" />
+                  <img
+                    src="img/ontdek-kunst-bij-kleur-1440x1920.png"
+                    alt="Screenshot Ontdek Kunst bij Kleur"
+                  />
                 </div>
                 <!-- div.card__header__hero -->
               </div>
@@ -211,12 +315,26 @@
               <!-- div.card__body -->
               <div class="card__footer">
                 <ul class="card__link-list">
-                  <li><a href="#">Demo</a></li>
-                  <li><a href="#">GitHub</a></li>
+                  <li>
+                    <a href="https://ontdek-kunst-bij-kleur.herokuapp.com/"
+                      >Demo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/martendebruijn/discover-art-by-color"
+                      >GitHub</a
+                    >
+                  </li>
                 </ul>
                 <ul class="card__tag-list">
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Node.js</li>
+                  <li>ExpressJS</li>
+                  <li>Gulp</li>
+                  <li>PWA</li>
                 </ul>
               </div>
               <!-- div.card__footer -->
@@ -232,7 +350,7 @@
                 <div class="card__header__hero">
                   <img
                     src="img/marijns-effenaar-planner-1440x1920.png"
-                    alt=""
+                    alt="Screenshot Marijns Effenaar Planner"
                   />
                 </div>
                 <!-- div.card__header__hero -->
@@ -250,12 +368,22 @@
               <!-- div.card__body -->
               <div class="card__footer">
                 <ul class="card__link-list">
-                  <li><a href="#">Demo</a></li>
-                  <li><a href="#">GitHub</a></li>
+                  <li>
+                    <a href="https://martendebruijn.github.io/web-design-1920/"
+                      >Demo</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/martendebruijn/web-design-1920"
+                      >GitHub</a
+                    >
+                  </li>
                 </ul>
                 <ul class="card__tag-list">
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Toegankelijkheid</li>
                 </ul>
               </div>
               <!-- div.card__footer -->
@@ -269,7 +397,10 @@
                 </div>
                 <!-- div.card__header__title -->
                 <div class="card__header__hero">
-                  <img src="img/ringo-pro-1920x1440.png" alt="" />
+                  <img
+                    src="img/ringo-pro-1920x1440.png"
+                    alt="Screenshot Ringo.Pro"
+                  />
                 </div>
                 <!-- div.card__header__hero -->
               </div>
@@ -301,11 +432,18 @@
               <!-- div.card__body -->
               <div class="card__footer">
                 <ul class="card__link-list">
-                  <li><a href="#">GitHub</a></li>
+                  <li>
+                    <a href="https://github.com/Ringo-Pro/Ringo.Pro">GitHub</a>
+                  </li>
                 </ul>
                 <ul class="card__tag-list">
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>EJS</li>
+                  <li>Gulp</li>
+                  <li>Node.js</li>
+                  <li>ExpressJS</li>
                 </ul>
               </div>
               <!-- div.card__footer -->
@@ -319,7 +457,10 @@
           <h2>Laatste artikelen</h2>
           <ul>
             <li>
-              <a href="#">CSS oplossing voor :hover op touchscreens</a>
+              <a
+                href="https://martendebruijn.medium.com/mmcss-oplossing-voor-hover-op-touchscreens-86903e2ff02e"
+                >CSS oplossing voor :hover op touchscreens</a
+              >
             </li>
           </ul>
         </section>
@@ -330,12 +471,12 @@
     <footer>
       <h2>Contact</h2>
       <ul>
-        <li><a href="https://martendebruijn.medium.com/">Medium</a></li>
-        <li><a href="https://codepen.io/martendebruijn">CodePen</a></li>
+        <li><a href="mailto:marten@martendebruijn.nl">Mail</a></li>
         <li>
           <a href="https://www.linkedin.com/in/martendebruijn/">LinkedIn</a>
         </li>
-        <li><a href="mailto:marten@martendebruijn.nl">Mail</a></li>
+        <li><a href="https://martendebruijn.medium.com/">Medium</a></li>
+        <li><a href="https://codepen.io/martendebruijn">CodePen</a></li>
         <li><a href="https://dribbble.com/martendebruijn">Dribbble</a></li>
         <li>
           <a href="https://cssbattle.dev/player/martendebruijn">CSS Battle</a>

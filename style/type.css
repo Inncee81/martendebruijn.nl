@@ -17,3 +17,6 @@ strong,
 .main-nav__name {
   font-weight: 700;
 }
+header h2 {
+  padding-bottom: var(--default-padding);
+}

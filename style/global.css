@@ -5,13 +5,11 @@ Class naming:
 .component--change / .component--special
 ---
 Group/sort CSS properties by:
-1. Variabeles
-2. Global
-3. Type
-4. Layout
-5. Skills
-6. Card
-7. Anchors 
+Parent layout
+Layout
+Box model
+Position
+Display
 ---
 Stylesheets:
 1. reset.css
