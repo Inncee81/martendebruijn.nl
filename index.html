@@ -122,13 +122,13 @@
     -->
     <div class="main-nav">
       <span class="main-nav__name">Marten de Bruijn</span>
-      <nav>
+      <nav class="main-nav__nav">
         <ul>
-          <li class="nav-item-mobile"><a href="#">Menu</a></li>
-          <a href="#vaardigheden"><li class="nav-item">Vaardigheden</li></a>
-          <a href="#projecten"><li class="nav-item">Projecten</li></a>
-          <a href="#artikelen"><li class="nav-item">Artikelen</li></a>
-          <a href="#contacten"><li class="nav-item">Contact</li></a>
+          <a href="#menu"><li class="nav-item-mobile">Menu</li></a>
+          <a href="#vaardigheden" class="nav-item"><li>Vaardigheden</li></a>
+          <a href="#projecten" class="nav-item"><li>Projecten</li></a>
+          <a href="#artikelen" class="nav-item"><li>Artikelen</li></a>
+          <a href="#contacten" class="nav-item"><li>Contact</li></a>
         </ul>
       </nav>
     </div>
@@ -264,12 +264,14 @@
                 <ul class="card__link-list">
                   <li>
                     <a
+                      target="_blank"
                       href="https://www.avanscmd.nl/work/marten-de-bruijn-zichtbaar"
                       >Avans CMD</a
                     >
                   </li>
                   <li>
                     <a
+                      target="_blank"
                       href="https://github.com/martendebruijn/zichtbaar-extensie"
                       >GitHub</a
                     >
@@ -316,12 +318,15 @@
               <div class="card__footer">
                 <ul class="card__link-list">
                   <li>
-                    <a href="https://ontdek-kunst-bij-kleur.herokuapp.com/"
+                    <a
+                      target="_blank"
+                      href="https://ontdek-kunst-bij-kleur.herokuapp.com/"
                       >Demo</a
                     >
                   </li>
                   <li>
                     <a
+                      target="_blank"
                       href="https://github.com/martendebruijn/discover-art-by-color"
                       >GitHub</a
                     >
@@ -369,12 +374,16 @@
               <div class="card__footer">
                 <ul class="card__link-list">
                   <li>
-                    <a href="https://martendebruijn.github.io/web-design-1920/"
+                    <a
+                      target="_blank"
+                      href="https://martendebruijn.github.io/web-design-1920/"
                       >Demo</a
                     >
                   </li>
                   <li>
-                    <a href="https://github.com/martendebruijn/web-design-1920"
+                    <a
+                      target="_blank"
+                      href="https://github.com/martendebruijn/web-design-1920"
                       >GitHub</a
                     >
                   </li>
@@ -433,7 +442,11 @@
               <div class="card__footer">
                 <ul class="card__link-list">
                   <li>
-                    <a href="https://github.com/Ringo-Pro/Ringo.Pro">GitHub</a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Ringo-Pro/Ringo.Pro"
+                      >GitHub</a
+                    >
                   </li>
                 </ul>
                 <ul class="card__tag-list">
@@ -458,6 +471,7 @@
           <ul>
             <li>
               <a
+                target="_blank"
                 href="https://martendebruijn.medium.com/mmcss-oplossing-voor-hover-op-touchscreens-86903e2ff02e"
                 >CSS oplossing voor :hover op touchscreens</a
               >
@@ -473,15 +487,47 @@
       <ul>
         <li><a href="mailto:marten@martendebruijn.nl">Mail</a></li>
         <li>
-          <a href="https://www.linkedin.com/in/martendebruijn/">LinkedIn</a>
+          <a target="_blank" href="https://www.linkedin.com/in/martendebruijn/"
+            >LinkedIn</a
+          >
         </li>
-        <li><a href="https://martendebruijn.medium.com/">Medium</a></li>
-        <li><a href="https://codepen.io/martendebruijn">CodePen</a></li>
-        <li><a href="https://dribbble.com/martendebruijn">Dribbble</a></li>
+      </ul>
+
+      <h2>Socials</h2>
+      <ul>
         <li>
-          <a href="https://cssbattle.dev/player/martendebruijn">CSS Battle</a>
+          <a target="_blank" href="https://github.com/martendebruijn">GitHub</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://martendebruijn.medium.com/"
+            >Medium</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://codepen.io/martendebruijn"
+            >CodePen</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://dribbble.com/martendebruijn"
+            >Dribbble</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://cssbattle.dev/player/martendebruijn"
+            >CSS Battle</a
+          >
         </li>
       </ul>
     </footer>
+    <nav id="menu" class="mobile-nav">
+      <h2>Menu</h2>
+      <ul>
+        <a href="#vaardigheden"><li>Vaardigheden</li></a>
+        <a href="#projecten"><li>Projecten</li></a>
+        <a href="#artikelen"><li>Artikelen</li></a>
+        <a href="#contacten"><li>Contact</li></a>
+      </ul>
+    </nav>
   </body>
 </html>

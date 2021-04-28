@@ -74,3 +74,9 @@ footer {
   /* Positioning */
   /* Display */
 }
+footer h2:first-of-type {
+  padding-top: 0;
+}
+footer h2 {
+  padding-top: var(--default-padding);
+}
