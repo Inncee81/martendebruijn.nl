@@ -20,15 +20,29 @@
 strong + p {
   padding-top: var(--default-padding);
 }
+.card__header__hero {
+}
+.card__header__hero--video {
+  /* Parent layout */
+  /* Layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Box-model */
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  /* Positioning */
+  /* Display */
+}
 .card__header img {
   /* Parent layout */
   /* Layout */
   /* Box-model */
   max-width: 100%;
-  /* Positioning */
-  /* Display */
   border-top: 2px solid;
   border-bottom: 2px solid;
+  /* Positioning */
+  /* Display */
 }
 .card__link-list {
   /* Parent layout */

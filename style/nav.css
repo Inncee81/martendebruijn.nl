@@ -68,7 +68,7 @@
 .main-nav__nav a:active {
   color: var(--link-active);
 }
-.nav-item-mobile,
+.main-nav__nav .nav-item-mobile,
 .mobile-nav {
   display: none;
   /* Hide (hamburger) menu item when there is enough space to show the full menu */
@@ -78,7 +78,7 @@
     display: none;
     /* Hide normal menu items when there isn't enough space to show the full menu */
   }
-  .nav-item-mobile {
+  .nav-item-mobile li {
     display: flex;
     /* Show (hamburger) menu item when there isn't enough space to show the full menu */
   }
