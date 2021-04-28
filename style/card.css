@@ -20,8 +20,6 @@
 strong + p {
   padding-top: var(--default-padding);
 }
-.card__header__hero {
-}
 .card__header__hero--video {
   /* Parent layout */
   /* Layout */

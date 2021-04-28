@@ -78,9 +78,14 @@
     display: none;
     /* Hide normal menu items when there isn't enough space to show the full menu */
   }
+  .main-nav__nav .nav-item-mobile {
+    display: block;
+  }
   .nav-item-mobile li {
     display: flex;
     /* Show (hamburger) menu item when there isn't enough space to show the full menu */
+    height: 100%;
+    align-items: center;
   }
   .mobile-nav {
     /* Parent layout */
