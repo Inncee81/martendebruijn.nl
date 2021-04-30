@@ -43,14 +43,15 @@
   /* Positioning */
   /* Display */
 }
+li a {
+  height: 100%;
+  width: 100%;
+  padding: 0 var(--default-padding);
+}
 .main-nav__nav li {
   /* Layout */
-  /* display: flex; */
-  /* align-items: center; */
   /* Box-model */
-  padding: 0 var(--default-padding);
   /* Display */
-  /* border-left: 2px solid; */
   color: var(--color-text);
 }
 .main-nav__nav a {
@@ -79,7 +80,7 @@
     /* Hide normal menu items when there isn't enough space to show the full menu */
   }
   .main-nav__nav .nav-item-mobile {
-    display: block;
+    display: flex;
   }
   .nav-item-mobile li {
     display: flex;
