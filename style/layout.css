@@ -12,7 +12,7 @@
   /* Positioning */
   /* Display */
 }
-header {
+.content > header {
   /* Parent layout */
   grid-area: header;
   /* Layout */
@@ -21,7 +21,7 @@ header {
   /* Positioning */
   /* Display */
 }
-header img {
+.content > header img {
   /* Parent layout */
   /* Layout */
   /* Box-model */
@@ -36,7 +36,7 @@ section {
 section > h2 {
   padding-bottom: var(--default-padding);
 }
-main {
+.content > main {
   /* Parent layout */
   grid-area: main;
   /* Layout */
@@ -65,7 +65,7 @@ main {
   /* Positioning */
   /* Display */
 }
-footer {
+.content > footer {
   /* Parent layout */
   /* Layout */
   /* Box-model */
@@ -74,9 +74,9 @@ footer {
   /* Positioning */
   /* Display */
 }
-footer h2:first-of-type {
+.content > footer h2:first-of-type {
   padding-top: 0;
 }
-footer h2 {
+.content > footer h2 {
   padding-top: var(--default-padding);
 }
