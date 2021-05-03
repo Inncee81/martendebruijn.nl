@@ -2,9 +2,9 @@
   border: var(--default-border) var(--color-border);
 
   background: var(--color-bg);
-  box-shadow: 5px 10px var(--color-shadow);
+  /* box-shadow: 5px 10px var(--color-shadow); */
 }
-.card h3,
+.card h2,
 .card__body,
 .card__footer {
   padding: var(--default-padding);
@@ -31,7 +31,7 @@ strong + p {
 .card__tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
 
   padding: var(--default-padding) 0;
 }
@@ -40,5 +40,5 @@ strong + p {
   border: var(--default-border);
 
   background: var(--color-parent-bg);
-  box-shadow: 5px 10px var(--color-shadow);
+  /* box-shadow: 5px 10px var(--color-shadow); */
 }

@@ -8,7 +8,7 @@
   padding: var(--default-padding);
 
   background: var(--color-bg);
-  box-shadow: 5px 10px var(--color-shadow);
+  /* box-shadow: 5px 10px var(--color-shadow); */
 }
 .skill-card__progress-bar {
   display: block;
@@ -24,7 +24,7 @@
   max-width: 100%;
   min-height: 15px;
 
-  background: var(--color-text);
+  background: var(--color-text-on-bg);
   border-right: var(--default-border);
 }
 .bar-no-border {

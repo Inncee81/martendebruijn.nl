@@ -2,23 +2,87 @@ h1,
 h2 {
   font-family: 'Roboto Mono', monospace;
 }
-h1 {
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+h1,
+.h1 {
   font-size: var(--font-size-h1);
+  /* padding-bottom: 1.5rem; */
 }
-h2 {
+h2,
+.h2 {
   font-size: var(--font-size-h2);
-}
-h3 {
-  font-size: var(--font-size-h3);
+  /* padding-bottom: 1.25rem; */
 }
 h3,
-h4 {
-  font-weight: 600;
+.h3 {
+  font-size: var(--font-size-h3);
+  /* padding-bottom: 1rem; */
 }
+h4,
+.h4 {
+  font-size: var(--font-size-h4);
+  /* padding-bottom: 0.85rem; */
+}
+h5,
+.h5 {
+  font-size: var(--font-size-h5);
+  /* padding-bottom: 0.7rem; */
+}
+h6,
+.h6 {
+  font-size: var(--font-size-h6);
+  /* padding-bottom: 0.5rem; */
+}
+
 strong,
 .main-nav__name {
   font-weight: 700;
 }
-header h2 {
+/* header h2 {
   padding-bottom: var(--default-padding);
 }
+hgroup h1,
+hgroup h2,
+hgroup h3,
+hgroup h4,
+hgroup h5,
+hgroup h6,
+hgroup .h1,
+hgroup .h2,
+hgroup .h3,
+hgroup .h4,
+hgroup .h5,
+hgroup .h6 {
+  padding-bottom: 0;
+}
+
+hgroup h1:last-child,
+hgroup .h1:last-child {
+  padding-bottom: 1.5rem;
+}
+hgroup h2:last-child,
+hgroup .h2:last-child {
+  padding-bottom: 1.25rem;
+}
+hgroup h3:last-child,
+hgroup .h3:last-child {
+  padding-bottom: 1rem;
+}
+hgroup h4:last-child,
+hgroup .h4:last-child {
+  padding-bottom: 0.85rem;
+}
+hgroup h5:last-child,
+hgroup .h5:last-child {
+  padding-bottom: 0.7rem;
+}
+hgroup h6:last-child,
+hgroup .h6:last-child {
+  padding-bottom: 0.5rem;
+} */

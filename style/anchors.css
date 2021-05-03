@@ -15,7 +15,7 @@ a:visited {
 }
 @media (hover: hover) and (pointer: fine) {
   a:hover {
-    color: var(--color-text);
+    color: var(--color-text-on-bg);
   }
 }
 a:active {

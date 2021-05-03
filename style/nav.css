@@ -27,13 +27,13 @@
 
   height: 100%;
 }
-li a {
+.main-nav__nav a {
   height: 100%;
   width: 100%;
   padding: 0 var(--default-padding);
 }
 .main-nav__nav li {
-  color: var(--color-text);
+  color: var(--color-text-on-bg);
 }
 .main-nav__nav a {
   display: flex;
@@ -46,6 +46,9 @@ li a {
 }
 .main-nav__nav a:active {
   color: var(--link-active);
+}
+.mobile-nav {
+  background: var(--color-bg);
 }
 .main-nav__nav .nav-item-mobile,
 .mobile-nav {

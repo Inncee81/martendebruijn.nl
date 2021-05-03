@@ -51,3 +51,19 @@ section > h2 {
 .page-footer h2 {
   padding-top: var(--default-padding);
 }
+.page-footer {
+  background: var(--color-bg);
+  border-top: var(--default-border);
+}
+section {
+  /* background: var(--color-bg); */
+  margin-bottom: 35px;
+}
+hgroup {
+  padding-bottom: 30px;
+}
+section h1,
+.page-footer h2,
+.mobile-nav h2 {
+  padding-bottom: 15px;
+}
