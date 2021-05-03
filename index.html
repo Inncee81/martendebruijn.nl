@@ -10,7 +10,7 @@
     />
     <meta name=author content="Marten de Bruijn">
     <meta name=description content="Portfolio website van web-designer en front-end developer Marten de Bruijn">
-    <meta name="theme-color" content="#f4a15d">
+    <!-- <meta name="theme-color" content="#f4a15d"> -->
     <!-- icons -->
     <meta name="apple-mobile-web-app-capable" content=yes />
     <meta name="apple-mobile-web-app-status-bar-style" content=black />
@@ -26,227 +26,67 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180.png" />
-    <meta name="msapplication-TileColor" content="#00ccff" />
+    <!-- <meta name="msapplication-TileColor" content="#00ccff" /> -->
     <meta name="msapplication-TileImage" content="/icons/apple-icon-144.png" />
     <!-- Roboto Mono and Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
     <link rel=preconnect href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel=stylesheet />
     <!-- All stylesheets will be minified and cascaded in a later stage -->
-    <link rel=stylesheet href="style/reset.css" />
-    <link rel=stylesheet href="style/themes/default.css"/>
-    <link rel=stylesheet href="style/global.css" />
-    <link rel=stylesheet href="style/type.css" />
-    <link rel=stylesheet href="style/anchors.css" />
-    <link rel=stylesheet href="style/layout.css" />
-    <link rel=stylesheet href="style/nav.css" />
-    <link rel=stylesheet href="style/skills.css" />
-    <link rel=stylesheet href="style/card.css" />
+    <link rel=stylesheet href="normalize.css" />
+    <link rel=stylesheet href="styles.css" />
+
     <title>Portfolio van Marten de Bruijn - web design en development</title>
   </head>
   <body>
     <!-- Ik zoek werk! Stuur een mail naar: marten@martendebruijn.nl -->
 
-    <div class="main-nav">
-      <span class="main-nav__name">Marten de Bruijn</span>
-      <nav class="main-nav__nav">
-        <ul>
-          <li><a href="#menu" class="nav-item-mobile">Menu</a></li>
-          <li><a href="#vaardigheden" class="nav-item">Vaardigheden</a></li>
-          <li><a href="#projecten" class="nav-item">Projecten</a></li>
-          <li><a href="#artikelen" class="nav-item">Artikelen</a></li>
-          <li><a href="#contacten" class="nav-item">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- div.main-nav -->
-
+    <nav class="page-nav">
+      <ul>
+        <li class="main-nav--home"><a href="/">Marten de Bruijn</a></li>
+        <li><a href="#projecten">Projecten</a></li>
+        <li><a href="#artikelen">Artikelen</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <div class=content>
-      <header class="content__header">
-        <hgroup>
-          <h1>Portfolio – Marten de Bruijn</h1>
-          <h2 class="h5">Web-designer en front-end developer</h2>
-        </hgroup>
-        <img
+      <header class="page-header">
+          <hgroup>
+            <h1>Portfolio van Marten de Bruijn</h1>
+            <h2>Web-designer en front-end developer</h2>
+          </hgroup>
+          <img
           src="/img/profiel-foto.png"
           alt="Portretfoto van Marten de Bruijn"
         />
       </header>
-
-      <main class="content__main">
-        <section id=vaardigheden>
-          <h1 class="h4">Technieken en vaardigheden</h1>
-          <ul class="skills-list">
-            <li class="skill-card">
-              <div class="skill-card__header">
-                <h2 class="h6">HTML</h2>
-                <p>Niveau: gevorderd</p>
-              </div>
-              <div class="skill-card__progress-bar">
-                <div class="progress-bar__fill bar-html"></div>
-                <!-- div.progress-bar__fill -->
-              </div>
-              <!-- div.skill-card__progress-bar -->
-            </li>
-            <li class="skill-card">
-              <div class="skill-card__header">
-                <h2 class="h6">CSS</h2>
-                <p>Niveau: gevorderd</p>
-              </div>
-              <div class="skill-card__progress-bar">
-                <div class="progress-bar__fill bar-css"></div>
-                <!-- div.progress-bar__fill -->
-              </div>
-              <!-- div.skill-card__progress-bar -->
-            </li>
-            <li class="skill-card">
-              <div class="skill-card__header">
-                <h2 class="h6">JavaScript</h2>
-                <p>Niveau: goed</p>
-              </div>
-              <div class="skill-card__progress-bar">
-                <div class="progress-bar__fill bar-js"></div>
-                <!-- div.progress-bar__fill -->
-              </div>
-              <!-- div.skill-card__progress-bar -->
-            </li>
-            <li class="skill-card">
-              <div class="skill-card__header">
-                <h2 class="h6">PHP</h2>
-                <p>Niveau: beginner</p>
-              </div>
-              <div class="skill-card__progress-bar">
-                <div class="progress-bar__fill bar-php"></div>
-                <!-- div.progress-bar__fill -->
-              </div>
-              <!-- div.skill-card__progress-bar -->
-            </li>
-            <li class="skill-card">
-              <div class="skill-card__header">
-                <h2 class="h6">Adobe Illustrator</h2>
-                <p>Niveau: goed</p>
-              </div>
-              <div class="skill-card__progress-bar">
-                <div class="progress-bar__fill bar-ai"></div>
-                <!-- div.progress-bar__fill -->
-              </div>
-              <!-- div.skill-card__progress-bar -->
-            </li>
-            <li class="skill-card">
-              <div class="skill-card__header">
-                <h2 class="h6">Adobe XD</h2>
-                <p>Niveau: goed</p>
-              </div>
-              <div class="skill-card__progress-bar">
-                <div class="progress-bar__fill bar-xd"></div>
-                <!-- div.progress-bar__fill -->
-              </div>
-              <!-- div.skill-card__progress-bar -->
-            </li>
-            <li class="skill-card">
-              <div class="skill-card__header">
-                <h2 class="h6">Adobe InDesign</h2>
-                <p>Niveau: redelijk</p>
-              </div>
-              <div class="skill-card__progress-bar">
-                <div class="progress-bar__fill bar-id"></div>
-                <!-- div.progress-bar__fill -->
-              </div>
-              <!-- div.skill-card__progress-bar -->
-            </li>
-          </ul>
-        </section>
-
+      <main class="page-main">
         <section id=projecten>
-          <h1 class="h4">Geselecteerde projecten</h1>
+          <h1>Geselecteerde projecten</h1>
           <div class="projecten-content">
-          <article class="card">
-            <header class="card__header">
-              <div class="card__header__title">
-                <h2 class="h5">Zichtbaar</h2>
-              </div>
-              <!-- div.card__header__title -->
-              <div class="card__header__hero card__header__hero--video">
-                <iframe
-                  src="https://player.vimeo.com/video/520383156"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                ></iframe>
-              </div>
-              <!-- div.card__header__hero -->
-            </header>
-            <main class="card__body">
-              <strong>
-                Hoe kunnen huidige niet-toegankelijke websites toegankelijker
-                gemaakt worden zodat deze beter te gebruiken zijn met een
-                schermlezer door blinden en slechtzienden?
-              </strong>
-              <p>
-                Producten en diensten worden steeds meer gedigitaliseerd en we
-                worden steeds meer aangewezen op onze online-vaardigheden.
-                Doordat het huidige web vooral visueel is ingericht, is het
-                gebruik maken van het web voor veel mensen niet zo
-                vanzelfsprekend. Zo ook voor blinden en slechtzienden, die met
-                behulp van een schermlezer het web gebruiken. Veel websites
-                zijn niet toegankelijk genoeg om te gebruiken met een
-                schermlezer. Zichtbaar is een extensie voor in de browser die
-                drie digitale toegankelijkheidsproblemen oplost.
-              </p>
-            </main>
-            <footer class="card__footer">
-              <ul class="card__link-list">
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.avanscmd.nl/work/marten-de-bruijn-zichtbaar"
-                    >Avans CMD</a
-                  >
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://github.com/martendebruijn/zichtbaar-extensie"
-                    >GitHub</a
-                  >
-                </li>
-              </ul>
-              <ul class="card__tag-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Chrome Extensie</li>
-                <li>Toegankelijkheid</li>
-              </ul>
-            </footer>
-          </article>
-
-
-            <article class=card>
-              <header class="card__header">
-                <div class="card__header__title">
-                  <h2 class="h5">Ontdek Kunst bij Kleur</h2>
-                </div>
-                <!-- div.card__header__title -->
-                <div class="card__header__hero">
+            <article>
+              <header>
+                <h2>Ontdek Kunst bij Kleur</h2>
+                <div class="article-hero">
                   <img
-                    src="img/ontdek-kunst-bij-kleur-1440x1920.png"
-                    alt="Screenshot Ontdek Kunst bij Kleur"
+                  src="img/ontdek-kunst-bij-kleur-1440x1920.png"
+                  alt="Screenshot Ontdek Kunst bij Kleur"
                   />
                 </div>
-                <!-- div.card__header__hero -->
               </header>
-              <!-- div.card__header -->
-              <main class="card__body">
-                <strong>
-                  Ontdek Kunst bij Kleur is een webapplicatie waarme je op basis
+              <main>
+                <p>
+                <strong>Ontdek Kunst bij Kleur is een webapplicatie waarme je op basis
                   van kleur kunst van het Rijksmuseum kunt ontdekken. De
                   applicatie maakt gebruik van de API van het Rijksmuseum. Bij
                   Ontdek Kunst bij Kleur is Server Side Rendering toegepast en
-                  het is een Progressive Web Application (PWA).
-                </strong>
-                <!-- <p> </p> -->
+                  het is een Progressive Web Application (PWA).</strong>
+                </p>
               </main>
-              <!-- div.card__body -->
-              <footer class="card__footer">
-                <ul class="card__link-list">
+              <footer>
+                <ul>
                   <li>
                     <a
                       target="_blank"
@@ -262,89 +102,67 @@
                     >
                   </li>
                 </ul>
-                <ul class="card__tag-list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>Node.js</li>
-                  <li>ExpressJS</li>
-                  <li>Gulp</li>
-                  <li>PWA</li>
-                </ul>
               </footer>
-              <!-- div.card__footer -->
             </article>
-            <!-- div.card -->
-
-            <article class=card>
-              <header class="card__header">
-                <div class="card__header__title">
-                  <h2 class="h5">Marijn's Effenaar Planner</h2>
+            <article>
+              <header>
+                <h2>Zichtbaar</h2>
+                <div class="article-hero">
+                  <iframe
+                    src="https://player.vimeo.com/video/520383156"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                  ></iframe>
                 </div>
-                <!-- div.card__header__title -->
-                <div class="card__header__hero">
-                  <img
-                    src="img/marijns-effenaar-planner-1440x1920.png"
-                    alt="Screenshot Marijns Effenaar Planner"
-                  />
-                </div>
-                <!-- div.card__header__hero -->
               </header>
-              <!-- div.card__header -->
-              <main class="card__body">
-                <strong>
-                  Marijn’s Effenaar planner is een drag-and-drop concert planner
-                  exclusief ontworpen voor Marijn. Marijn heeft een motorische
-                  stoornis en veel moeite met fijne motoriek. Deze drag-and-drop
-                  is zo ontworpen dat deze voor hem goed te gebruiken is.
-                </strong>
-                <!-- <p> </p> -->
+              <main>
+                <p><strong>
+                  Hoe kunnen huidige niet-toegankelijke websites toegankelijker
+                  gemaakt worden zodat deze beter te gebruiken zijn met een
+                  schermlezer door blinden en slechtzienden?
+                </strong></p>
+                <p>
+                  Producten en diensten worden steeds meer gedigitaliseerd en we
+                  worden steeds meer aangewezen op onze online-vaardigheden.
+                  Doordat het huidige web vooral visueel is ingericht, is het
+                  gebruik maken van het web voor veel mensen niet zo
+                  vanzelfsprekend. Zo ook voor blinden en slechtzienden, die met
+                  behulp van een schermlezer het web gebruiken. Veel websites
+                  zijn niet toegankelijk genoeg om te gebruiken met een
+                  schermlezer. Zichtbaar is een extensie voor in de browser die
+                  drie digitale toegankelijkheidsproblemen oplost.
+                </p>
               </main>
-              <!-- div.card__body -->
-              <footer class="card__footer">
-                <ul class="card__link-list">
+              <footer>
+                <ul>
                   <li>
                     <a
                       target="_blank"
-                      href="https://martendebruijn.github.io/web-design-1920/"
-                      >Demo</a
+                      href="https://www.avanscmd.nl/work/marten-de-bruijn-zichtbaar"
+                      >Avans CMD</a
                     >
                   </li>
                   <li>
                     <a
                       target="_blank"
-                      href="https://github.com/martendebruijn/web-design-1920"
+                      href="https://github.com/martendebruijn/zichtbaar-extensie"
                       >GitHub</a
                     >
                   </li>
                 </ul>
-                <ul class="card__tag-list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>Toegankelijkheid</li>
-                </ul>
               </footer>
-              <!-- div.card__footer -->
             </article>
-            <!-- div.card -->
-
-            <article class=card>
-              <header class="card__header">
-                <div class="card__header__title">
-                  <h2 class="h5">Ringo.pro</h2>
-                </div>
-                <!-- div.card__header__title -->
-                <div class="card__header__hero">
+            <article>
+              <header>
+                <h2>Ringo.pro</h2>
+                <div class="article-hero">
                   <img
                     src="img/ringo-pro-1920x1440.png"
                     alt="Screenshot Ringo.Pro"
                   />
                 </div>
-                <!-- div.card__header__hero -->
               </header>
-              <!-- div.card__header -->
-              <main class="card__body">
+              <main>
+                <p>
                 <strong>
                   Films, TV-series, games, trailers, reclames, sociale media,
                   allemaal voorbeelden van waar muziek gebruikt wordt. De mensen
@@ -353,6 +171,7 @@
                   muziek zoekt en de juiste mensen weet te benaderen om de
                   juiste licenties te krijgen.
                 </strong>
+              </p>
                 <p>
                   Het huidige proces vergt veel tijd en is onhandig. Vaak is het
                   niet duidelijk wie de rechten heeft en je hebt te maken met
@@ -368,149 +187,140 @@
                   basis van de zoekopdracht.
                 </p>
               </main>
-              <!-- div.card__body -->
-              <footer class="card__footer">
-                <ul class="card__link-list">
-                  <li>
-                    <a
-                      target="_blank"
-                      href="https://github.com/Ringo-Pro/Ringo.Pro"
-                      >GitHub</a
-                    >
-                  </li>
-                </ul>
-                <ul class="card__tag-list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>EJS</li>
-                  <li>Gulp</li>
-                  <li>Node.js</li>
-                  <li>ExpressJS</li>
+              <footer>
+                <ul>
+                  <li> <a
+                    target="_blank"
+                    href="https://github.com/Ringo-Pro/Ringo.Pro"
+                    >GitHub</a
+                  ></li>
                 </ul>
               </footer>
-              <!-- div.card__footer -->
             </article>
-            <!-- div.card -->
-
-            <article class=card>
-              <header class="card__header">
-                <div class="card__header__title">
-                  <h2 class="h5">Aspektu</h2>
-                </div>
-                <!-- div.card__header__title -->
-                <div class="card__header__hero">
+            <article>
+              <header>
+                <h2>Aspektu</h2>
+                <div class="article-hero">
                   <img
-                    src="img/aspektu-website-1440x1920.png"
-                    alt="Screenshot Aspektu"
+                      src="img/aspektu-website-1440x1920.png"
+                      alt="Screenshot Aspektu"
                   />
                 </div>
-                <!-- div.card__header__hero -->
               </header>
-              <!-- div.card__header -->
-              <main class="card__body">
-                <strong>
-                  Tijdens mijn stage bij Eonics kreeg ik de opdracht om een
-                  website te maken voor Aspektu. Aspektu (Latijn voor zicht) is
-                  een AR-bril voor slechtziende museumbezoekers. De bril scant
-                  een QR-code bij een schilderij en zet dit om in audio. Zo kan
-                  deze bril voor de slechtziende medemens via AR een deel van
-                  het zicht invullen. Aspektu is bedacht door Kenrick Trip.
-                </strong>
+              <main>
+                <p>
+                <strong>Ontdek Kunst bij Kleur is een webapplicatie waarme je op basis
+                  van kleur kunst van het Rijksmuseum kunt ontdekken. De
+                  applicatie maakt gebruik van de API van het Rijksmuseum. Bij
+                  Ontdek Kunst bij Kleur is Server Side Rendering toegepast en
+                  het is een Progressive Web Application (PWA).</strong>
+                </p>
               </main>
-              <!-- div.card__body -->
-              <footer class="card__footer">
-                <ul class="card__link-list">
+              <footer>
+                <ul>
                   <li>
                     <a target="_blank" href="https://aspektu.nl/">Aspektu</a>
                   </li>
                 </ul>
-                <ul class="card__tag-list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
+              </footer>
+            </article>
+            <article>
+              <header>
+                <h2>Marijn’s Effenaar Planner</h2>
+                <div class="article-hero">
+                  <img
+                  src="img/marijns-effenaar-planner-1440x1920.png"
+                  alt="Screenshot Marijns Effenaar Planner"
+                />
+              </div>
+              </header>
+              <main>
+              <p>
+                <strong>Marijn’s Effenaar planner is een drag-and-drop concert planner
+                  exclusief ontworpen voor Marijn. Marijn heeft een motorische
+                  stoornis en veel moeite met fijne motoriek. Deze drag-and-drop
+                  is zo ontworpen dat deze voor hem goed te gebruiken is.</strong>
+                </p>
+              </main>
+              <footer>
+                <ul>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://martendebruijn.github.io/web-design-1920/"
+                      >Demo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://github.com/martendebruijn/web-design-1920"
+                      >GitHub</a
+                    >
+                  </li>
                 </ul>
               </footer>
-              <!-- div.card__footer -->
             </article>
-            <!-- div.card -->
           </div>
-          <!-- div.projecten-content -->
         </section>
-
         <section id=artikelen>
-          <h1 class="h4">Laatste artikelen</h1>
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                href="https://martendebruijn.medium.com/digitale-toegankelijkheid-waarom-ef32da749ace"
-                >Digitale toegankelijkheid, waarom?</a
-              >
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://martendebruijn.medium.com/mmcss-oplossing-voor-hover-op-touchscreens-86903e2ff02e"
-                >CSS oplossing voor :hover op touchscreens</a
-              >
-            </li>
-          </ul>
+          <h1>Laatste artikelen</h1>
+          <div class="artikelen-content">
+            <article>
+              <header>
+                <h2>Digitale toegankelijkheid, waarom?</h2>
+                <time datetime="2021-04-29">29 april 2021</time>
+              </header>
+              <main>
+                <p>
+                  Vaak hoor ik mensen zeggen: maar mensen met een handicap hebben toch hulpmiddelen als een schermlezer? Ondanks dat het klopt dat er verschillende middelen zijn voor mensen met een handicap om (beter) over het web te navigeren, lijken we te vergeten dat dit slechts hulpmiddelen zijn.
+                </p>
+              </main>
+              <footer>
+                <a target="_blank"
+                href="https://martendebruijn.medium.com/digitale-toegankelijkheid-waarom-ef32da749ace">Lees meer op Medium</a>
+              </footer>
+            </article>
+            <article>
+              <header>
+                <h2>CSS oplossing voor :hover op touchscreens</h2>
+                <time datetime="2021-04-07">07 april 2021</time>
+              </header>
+              <main>
+                <p>
+                  Een hover-effect laat duidelijk zien welke elementen klikbaar zijn. Een hover is het met de muis zweven over een element, zónder op het element te klikken. Wanneer iemand de muis over een link beweegt veranderd bijvoorbeeld de (achtergrond-)kleur. Met een hover-effect kunnen we duidelijk onderscheid maken tussen een element mét interactie en een element zonder. Een hover-effect is dus belangrijk, maar hoe werkt dit eigenlijk op een apparaat waar men geen muis heeft, zoals een smartphone?
+                </p>
+              </main>
+              <footer>
+                <a target="_blank"
+                href="https://martendebruijn.medium.com/mmcss-oplossing-voor-hover-op-touchscreens-86903e2ff02e">Lees meer op Medium</a>
+              </footer>
+            </article>
+          </div>
         </section>
       </main>
     </div>
-    <!-- div.content -->
-
-    <footer class="page-footer">
-      <h2 class="h4">Contact</h2>
-      <address>
+    <footer id=contact class="page-footer">
+      <section>
+      <h2>Contact</h2>
+        <address>
+          <ul>
+            <li><a href="mailto:marten@martendebruijn.nl">Mail</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/martendebruijn/">LinkedIn</a></li>
+          </ul>
+        </address>
+      </section>
+      <section>
+        <h2>Socials</h2>
         <ul>
-          <li><a href="mailto:marten@martendebruijn.nl">Mail</a></li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/in/martendebruijn/" >LinkedIn</a >
-          </li>
+          <li><a target="_blank" href="https://github.com/martendebruijn">GitHub</a></li>
+          <li><a target="_blank" href="https://martendebruijn.medium.com/">Medium</a></li>
+          <li><a target="_blank" href="https://codepen.io/martendebruijn">CodePen</a></li>
+          <li><a target="_blank" href="https://dribbble.com/martendebruijn">Dribbble</a></li>
+          <li><a target="_blank" href="https://www.instagram.com/martenwork/">Instagram</a></li>
+          <li><a target="_blank" href="https://cssbattle.dev/player/martendebruijn">CSS Battle</a></li>
         </ul>
-      </address>
-      <h2 class="h4">Socials</h2>
-      <ul>
-        <li>
-          <a target="_blank" href="https://github.com/martendebruijn">GitHub</a>
-        </li>
-        <li>
-          <a target="_blank" href="https://martendebruijn.medium.com/"
-            >Medium</a
-          >
-        </li>
-        <li>
-          <a target="_blank" href="https://codepen.io/martendebruijn"
-            >CodePen</a
-          >
-        </li>
-        <li>
-          <a target="_blank" href="https://dribbble.com/martendebruijn"
-            >Dribbble</a
-          >
-        </li>
-        <li>
-          <a target="_blank" href="https://www.instagram.com/martenwork/"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a target="_blank" href="https://cssbattle.dev/player/martendebruijn"
-            >CSS Battle</a
-          >
-        </li>
-      </ul>
+      </section>
     </footer>
-    <nav id=menu class="mobile-nav">
-      <h2 class="h4">Menu</h2>
-      <ul>
-        <li><a href="#vaardigheden">Vaardigheden</a></li>
-        <li><a href="#projecten">Projecten</a></li>
-        <li><a href="#artikelen">Artikelen</a></li>
-        <li><a href="#contacten">Contact</a></li>
-      </ul>
-    </nav>
   </body>
 </html>
