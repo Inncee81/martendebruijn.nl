@@ -25,9 +25,7 @@ Stylesheets:
 
 html,
 body {
-  background: var(--color-neutral);
   background: var(--color-parent-bg);
-  color: var(--text-color-default);
   color: var(--color-text);
   font-family: Roboto, sans-serif;
   font-size: 16px;

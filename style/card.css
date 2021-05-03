@@ -1,16 +1,9 @@
 .card {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
-  /* Positioning */
-  /* Display */
+  border: var(--default-border) var(--color-border);
+
   background: var(--color-bg);
-  border: 2px solid var(--color-border);
   box-shadow: 5px 10px var(--color-shadow);
 }
-/* .card:nth-child(even) {
-  background: var(--color-green);
-} */
 .card h3,
 .card__body,
 .card__footer {
@@ -20,52 +13,32 @@ strong + p {
   padding-top: var(--default-padding);
 }
 .card__header__hero--video {
-  /* Parent layout */
-  /* Layout */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Box-model */
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  /* Positioning */
-  /* Display */
+
+  border-top: var(--default-border);
+  border-bottom: var(--default-border);
 }
 .card__header img {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
   max-width: 100%;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  /* Positioning */
-  /* Display */
+  border-top: var(--default-border);
+  border-bottom: var(--default-border);
 }
 .card__link-list {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
   padding-bottom: var(--default-padding);
-  /* Display */
 }
 .card__tag-list {
-  /* Parent layout */
-  /* Layout */
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  /* Box-model */
+
   padding: var(--default-padding) 0;
-  /* Display */
 }
 .card__tag-list li {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
   padding: 5px var(--default-padding);
-  /* Display */
+  border: var(--default-border);
+
   background: var(--color-parent-bg);
-  border: 2px solid;
   box-shadow: 5px 10px var(--color-shadow);
-  /* box-shadow: 5px 10px var(--powdered-cocoa); */
 }

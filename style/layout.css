@@ -1,34 +1,23 @@
 .content {
-  /* Layout */
   display: grid;
   gap: var(--default-padding);
   grid-template:
     'header' auto
     'main' 1fr
     / 1fr;
-  /* Box-model */
+
   min-height: 100vh;
   padding-top: 50px;
-  /* Positioning */
-  /* Display */
 }
-.content > header {
-  /* Parent layout */
+.content__header {
   grid-area: header;
-  /* Layout */
+
   padding: var(--default-padding);
-  /* Box-model */
-  /* Positioning */
-  /* Display */
 }
-.content > header img {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
+.content__header img {
   max-width: 185px;
-  /* Positioning */
-  /* Display */
-  border: 2px solid var(--color-border);
+
+  border: var(--default-border) var(--color-border);
 }
 section {
   padding-bottom: 30px;
@@ -36,47 +25,29 @@ section {
 section > h2 {
   padding-bottom: var(--default-padding);
 }
-.content > main {
-  /* Parent layout */
+.content__main {
   grid-area: main;
-  /* Layout */
-  /* Box-model */
+
   padding: var(--default-padding);
-  /* Positioning */
-  /* Display */
 }
 .projecten-content {
-  /* Parent layout */
-  /* Layout */
   align-items: start;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
-  /* Box-model */
+
   min-height: 100px;
-  /* Positioning */
-  /* Display */
 }
 #artikelen {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
   padding-top: var(--default-padding);
-  /* Positioning */
-  /* Display */
 }
-body > footer {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
+.page-footer {
   min-height: 200px;
   padding: var(--default-padding);
-  /* Positioning */
-  /* Display */
 }
-body > footer h2:first-of-type {
+.page-footer h2:first-of-type {
   padding-top: 0;
 }
-body > footer h2 {
+.page-footer h2 {
   padding-top: var(--default-padding);
 }

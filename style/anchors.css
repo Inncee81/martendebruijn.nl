@@ -11,16 +11,13 @@ nav a:link::before {
   padding-right: 0;
 }
 a:visited {
-  color: var(--color-link-visited);
   color: var(--color-visited);
 }
 @media (hover: hover) and (pointer: fine) {
   a:hover {
-    color: var(--color-link-hover);
     color: var(--color-text);
   }
 }
 a:active {
-  color: var(--color-link-active);
   color: var(--color-active);
 }

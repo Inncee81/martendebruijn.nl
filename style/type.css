@@ -3,11 +3,13 @@ h2 {
   font-family: 'Roboto Mono', monospace;
 }
 h1 {
-  font-size: 3rem;
+  font-size: var(--font-size-h1);
 }
-h2,
+h2 {
+  font-size: var(--font-size-h2);
+}
 h3 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-h3);
 }
 h3,
 h4 {

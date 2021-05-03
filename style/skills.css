@@ -1,53 +1,31 @@
 .skills-list {
-  /* Parent layout */
-  /* Layout */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-  /* Box-model */
-  /* Positioning */
-  /* Display */
 }
 .skill-card {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
+  border: var(--default-border) var(--color-border);
   padding: var(--default-padding);
-  /* Positioning */
-  /* Display */
+
   background: var(--color-bg);
-  border: 2px solid var(--color-border);
   box-shadow: 5px 10px var(--color-shadow);
 }
-/*
-.skill-card:nth-child(odd) {
-  background: var(--color-green);
-} */
 .skill-card__progress-bar {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
   display: block;
   width: 100%;
   min-height: 15px;
-  /* Positioning */
-  /* Display */
+
   background: var(--color-bg);
-  border: 2px solid;
+  border: var(--default-border);
 }
 .progress-bar__fill {
-  /* Parent layout */
-  /* Layout */
-  /* Box-model */
   display: block;
   min-width: 1%;
   max-width: 100%;
   min-height: 15px;
-  /* Positioning */
-  /* Display */
-  background: var(--color-blue);
+
   background: var(--color-text);
-  border-right: 2px solid;
+  border-right: var(--default-border);
 }
 .bar-no-border {
   border-right: none;
