@@ -65,7 +65,7 @@ section > h2 {
   /* Positioning */
   /* Display */
 }
-.content > footer {
+body > footer {
   /* Parent layout */
   /* Layout */
   /* Box-model */
@@ -74,9 +74,9 @@ section > h2 {
   /* Positioning */
   /* Display */
 }
-.content > footer h2:first-of-type {
+body > footer h2:first-of-type {
   padding-top: 0;
 }
-.content > footer h2 {
+body > footer h2 {
   padding-top: var(--default-padding);
 }
