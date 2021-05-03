@@ -4,8 +4,7 @@
   /* Box-model */
   /* Positioning */
   /* Display */
-  background: var(--color-dark-pink);
-  background: var(--sandy-brown);
+  background: var(--color-bg);
   border: 2px solid var(--color-border);
   box-shadow: 5px 10px var(--color-shadow);
 }
