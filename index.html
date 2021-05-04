@@ -45,7 +45,7 @@
 
     <nav class="page-nav nav-desktop">
       <ul>
-        <li class="main-nav--home"><a href="/">Marten de Bruijn</a></li>
+        <li class="main-nav--home"><a href="/" aria-current=page>Marten de Bruijn</a></li>
         <li><a href="#projecten">Projecten</a></li>
         <li><a href="#artikelen">Artikelen</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -53,7 +53,7 @@
     </nav>
     <nav class="page-nav nav-mobile">
       <ul>
-        <li><a href="/">Marten de Bruijn</a></li>
+        <li><a href="/" aria-current=page>Marten de Bruijn</a></li>
         <li><a href="#menu">Menu</a></li>
       </ul>
     </nav>
@@ -69,12 +69,12 @@
         />
       </header>
       <main>
-        <section id=projecten>
-          <h2>Geselecteerde projecten</h2>
+        <section id=projecten aria-labelledby="title-projecten">
+          <h2 id="title-projecten">Geselecteerde projecten</h2>
           <div class="projecten-content">
-            <article>
+            <article aria-labelledby="title-ontdek-kunst-bij-kleur">
               <header>
-                <h3>Ontdek Kunst bij Kleur</h3>
+                <h3 id="title-ontdek-kunst-bij-kleur">Ontdek Kunst bij Kleur</h3>
                 <div class="article-hero">
                   <img
                   src="img/ontdek-kunst-bij-kleur-1440x1920.png"
@@ -108,9 +108,9 @@
                 </ul>
               </footer>
             </article>
-            <article>
+            <article aria-labelledby="title-zichtbaar">
               <header>
-                <h3>Zichtbaar</h3>
+                <h3 id="title-zichtbaar">Zichtbaar</h3>
                 <div class="article-hero">
                   <iframe
                     src="https://player.vimeo.com/video/520383156"
@@ -153,9 +153,9 @@
                 </ul>
               </footer>
             </article>
-            <article>
+            <article aria-labelledby="title-ringo">
               <header>
-                <h3>Ringo.pro</h3>
+                <h3 id="title-ringo">Ringo.pro</h3>
                 <div class="article-hero">
                   <img
                     src="img/ringo-pro-1920x1440.png"
@@ -197,9 +197,9 @@
                 </ul>
               </footer>
             </article>
-            <article>
+            <article aria-labelledby="title-aspektu">
               <header>
-                <h3>Aspektu</h3>
+                <h3 id="title-aspektu">Aspektu</h3>
                 <div class="article-hero">
                   <img
                       src="img/aspektu-website-1440x1920.png"
@@ -225,9 +225,9 @@
                 </ul>
               </footer>
             </article>
-            <article>
+            <article aria-labelledby="title-marijn-effenaar">
               <header>
-                <h3>Marijn’s Effenaar Planner</h3>
+                <h3 id="title-marijn-effenaar">Marijn’s Effenaar Planner</h3>
                 <div class="article-hero">
                   <img
                   src="img/marijns-effenaar-planner-1440x1920.png"
@@ -262,12 +262,12 @@
             </article>
           </div>
         </section>
-        <section id=artikelen>
-          <h2>Laatste artikelen</h2>
+        <section id=artikelen aria-labelledby="title-artikelen">
+          <h2 id="title-artikelen">Laatste artikelen</h2>
           <div class="artikelen-content">
-            <article>
+            <article aria-labelledby="title-digitale-toegankelijkheid-waarom">
               <header>
-                <h3>Digitale toegankelijkheid, waarom?</h3>
+                <h3 id="title-digitale-toegankelijkheid-waarom">Digitale toegankelijkheid, waarom?</h3>
                 <time datetime="2021-04-29">29 april 2021</time>
               </header>
                 <p>
@@ -278,9 +278,9 @@
                 href="https://martendebruijn.medium.com/digitale-toegankelijkheid-waarom-ef32da749ace">Lees meer op Medium</a>
               </footer>
             </article>
-            <article>
+            <article aria-labelledby="title-css-oplossing-hover">
               <header>
-                <h3>CSS oplossing voor :hover op touchscreens</h3>
+                <h3 id="title-css-oplossing-hover">CSS oplossing voor :hover op touchscreens</h3>
                 <time datetime="2021-04-07">07 april 2021</time>
               </header>
                 <p>
@@ -296,8 +296,8 @@
       </main>
     </div>
     <footer id=contact class="page-footer">
-      <section>
-      <h2>Contact</h2>
+      <section aria-labelledby="title-contact">
+      <h2 id="title-contact">Contact</h2>
         <address>
           <ul>
             <li><a href="mailto:marten@martendebruijn.nl">Mail</a></li>
@@ -305,8 +305,8 @@
           </ul>
         </address>
       </section>
-      <section>
-        <h3 class="h2">Socials</h3>
+      <section aria-labelledby="title-socials">
+        <h3 class="h2" id="title-socials">Socials</h3>
         <ul>
           <li><a target="_blank" href="https://github.com/martendebruijn">GitHub</a></li>
           <li><a target="_blank" href="https://martendebruijn.medium.com/">Medium</a></li>
@@ -316,8 +316,8 @@
           <li><a target="_blank" href="https://cssbattle.dev/player/martendebruijn">CSS Battle</a></li>
         </ul>
       </section>
-      <section id=menu>
-        <h2>Ga snel naar</h2>
+      <section id=menu aria-labelledby="title-menu">
+        <h2 id="title-menu">Ga snel naar</h2>
         <ul>
           <li><a href="#projecten">Projecten</a></li>
           <li><a href="#artikelen">Artikelen</a></li>
