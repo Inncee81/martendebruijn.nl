@@ -97,7 +97,7 @@ h2,
 .artikelen-content {
   display: grid;
   gap: 64px 46px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
 }
 article img {
   width: 100%;
