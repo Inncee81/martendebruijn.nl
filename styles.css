@@ -151,3 +151,40 @@ a:visited {
 .article-hero {
   width: 100%;
 }
+.nav-mobile,
+#menu {
+  display: none;
+}
+.nav-desktop {
+  display: block;
+}
+@media only screen and (max-width: 500px) {
+  .nav-mobile,
+  #menu {
+    display: block;
+  }
+  .nav-mobile ul {
+    justify-content: space-between;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .page-footer {
+    flex-direction: column;
+  }
+  .page-header h1 {
+    font-size: 18vw;
+  }
+  .page-header {
+    padding: 22% 5% 5% 5%;
+  }
+  .page-header img {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    top: 30%;
+    min-width: 182px;
+    width: 20%;
+    max-width: 300px;
+  }
+}
