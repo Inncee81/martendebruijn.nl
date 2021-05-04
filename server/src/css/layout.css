@@ -49,3 +49,7 @@ main section,
     padding: 22% 5% 5% 5%;
   }
 }
+hgroup {
+  max-height: 69vh;
+  overflow: hidden;
+}

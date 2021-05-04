@@ -5,8 +5,8 @@ const gulp = require('gulp'),
   concat = require('gulp-concat'),
   terser = require('gulp-terser');
 
-const jsFiles = ['./docs/src/js/*.js'],
-  cssFiles = ['./docs/src/css/normalize.css', './docs/src/css/*.css'];
+const jsFiles = ['./server/src/js/*.js'],
+  cssFiles = ['./server/src/css/normalize.css', './server/src/css/*.css'];
 
 function css() {
   return gulp
@@ -14,14 +14,14 @@ function css() {
     .pipe(concat('styles.css'))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(autoprefixer({ cascade: false }))
-    .pipe(gulp.dest('./docs/public/dist/'));
+    .pipe(gulp.dest('./server/public/dist/'));
 }
 function es() {
   return gulp
     .src(jsFiles)
     .pipe(terser())
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('./docs/public/dist/'));
+    .pipe(gulp.dest('./server/public/dist/'));
 }
 function watch() {
   gulp.watch(cssFiles, css);

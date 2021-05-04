@@ -6,7 +6,7 @@
   z-index: 3;
 
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 .page-nav ul {
   display: flex;
@@ -17,14 +17,10 @@
 .page-nav li {
   padding: 10px;
 }
-.page-nav a,
-.page-nav a:link,
-.page-nav a:visited {
-  text-decoration: none;
-  color: black;
-}
-.page-nav a:hover {
-  text-decoration: underline;
+@media (hover: hover) and (pointer: fine) {
+  .page-nav a:hover {
+    text-decoration: underline;
+  }
 }
 .main-nav--home {
   flex: 2;

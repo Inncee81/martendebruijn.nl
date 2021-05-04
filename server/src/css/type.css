@@ -11,7 +11,7 @@ h2,
   font-size: 1.5em;
   margin: 0;
   padding: 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .page-header h1 {
@@ -30,28 +30,32 @@ h2,
 a:link {
   display: inline-block;
   color: #07288a;
-  font-weight: 700;
   transition: all 400ms ease-in-out;
 }
 a:visited {
   color: #32078a;
 }
-a:hover {
-  color: #4f1417;
-}
-a:active {
-  color: #8a070e;
-  transform: scale(0.9);
-}
+
 .page-footer a:link {
   color: #0b0037;
 }
 .page-footer a:visited {
   color: #2d0037;
 }
-.page-footer a:hover {
-  color: #370000;
+@media (hover: hover) and (pointer: fine) {
+  .page-footer a:hover {
+    color: #370000;
+  }
+  a:hover {
+    color: #4f1417;
+  }
 }
+
+a:active {
+  color: #8a070e;
+  transform: scale(0.9);
+}
+
 .page-footer a:active {
   color: #020000;
 }
