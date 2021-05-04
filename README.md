@@ -29,9 +29,8 @@ Personal portfolio / sandbox to try stuff :)
 
 ## Performance
 
-<!--
-- only load the fonts in that I actually use
-- changed all images to the maximum possible size
-- minified and concatenated CSS
-- added a max height and overflow hidden to hgroup to prevent content reflow when the google font of the h1 is being loaded
- -->
+- Only load in the Google Fonts that are actually being used
+- Changed all images sizes to the maximum possible size
+- Minified and concatenated CSS
+- Added a max-height and overflow hidden to the hgroup element to prevent content reflow when the Google font for the h1 is being loaded
+- Added compression (NPM package)
