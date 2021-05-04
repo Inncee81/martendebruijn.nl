@@ -1,0 +1,38 @@
+h1,
+.h1 {
+  border-bottom: 4px solid;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+h2,
+.h2 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.page-header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 12vw;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.page-footer h2,
+.page-footer .h2 {
+  border-bottom: 4px solid;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+a:link,
+a:visited {
+  color: #1f0a72;
+}
+@media only screen and (max-width: 500px) {
+  .page-header h1 {
+    font-size: 18vw;
+  }
+}

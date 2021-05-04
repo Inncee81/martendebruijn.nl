@@ -1,0 +1,28 @@
+{
+  "name": "martendebruijn.nl",
+  "version": "1.0.0",
+  "description": "Personal portfolio/sandbox",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martendebruijn/martendebruijn.nl.git"
+  },
+  "author": "Marten de Bruijn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martendebruijn/martendebruijn.nl/issues"
+  },
+  "homepage": "https://github.com/martendebruijn/martendebruijn.nl#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-terser": "^2.0.1"
+  }
+}

@@ -1,0 +1,51 @@
+.content {
+  min-height: 100vh;
+}
+.page-header {
+  position: relative;
+  z-index: 2;
+  padding: 114px 5% 5% 5%;
+
+  background: #7580bf;
+}
+#projecten {
+  background: #f2dac4;
+}
+#artikelen {
+  background: #f26430;
+}
+.projecten-content,
+.artikelen-content {
+  display: grid;
+  gap: 64px 46px;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+}
+
+main section,
+.page-footer {
+  padding: 5%;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  min-height: 20px;
+  background: #7580bf;
+}
+
+.page-footer section:first-of-type {
+  flex: 2;
+}
+.page-footer section:last-of-type {
+  flex: 1;
+}
+@media only screen and (max-width: 500px) {
+  .page-footer {
+    flex-direction: column;
+  }
+
+  .page-header {
+    padding: 22% 5% 5% 5%;
+  }
+}

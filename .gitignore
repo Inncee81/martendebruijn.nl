@@ -1,6 +1,7 @@
 .ds_store
 .ds_store
 img
+public
 # Logs
 logs
 *.log
