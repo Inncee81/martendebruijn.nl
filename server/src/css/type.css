@@ -15,10 +15,18 @@ h2,
 }
 
 .page-header h1 {
-  font-family: 'Anton', sans-serif;
+  /* font-family: 'Anton', sans-serif; */
   font-size: 12vw;
-  letter-spacing: 0.2rem;
+  /* letter-spacing: 0.2rem; */
   text-transform: uppercase;
+
+  /* font-size: 25px; */
+  line-height: 1.5;
+  font-weight: 400;
+  visibility: visible;
+  font-family: Impact, sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 0.05px;
 }
 .page-footer h2,
 .page-footer .h2 {
@@ -30,34 +38,42 @@ h2,
 a:link {
   display: inline-block;
   color: #07288a;
+  color: hsl(225, 90%, 28%);
   transition: all 400ms ease-in-out;
 }
 a:visited {
   color: #32078a;
+  color: hsl(260, 90%, 28%);
 }
 
 .page-footer a:link {
   color: #0b0037;
+  color: hsl(252, 100%, 11%);
 }
 .page-footer a:visited {
   color: #2d0037;
+  color: hsl(289, 100%, 11%);
 }
 @media (hover: hover) and (pointer: fine) {
   .page-footer a:hover {
     color: #370000;
+    color: hsl(0, 100%, 11%);
   }
   a:hover {
     color: #4f1417;
+    color: hsl(357, 60%, 19%);
   }
 }
 
 a:active {
   color: #8a070e;
+  color: hsl(357, 90%, 28%);
   transform: scale(0.9);
 }
 
 .page-footer a:active {
   color: #020000;
+  color: hsl(0, 100%, 0%);
 }
 
 @media only screen and (max-width: 500px) {
@@ -65,3 +81,23 @@ a:active {
     font-size: 18vw;
   }
 }
+
+/* FOUC
+fallback:
+font-size: 25px
+line-height: 1.5
+font-weight: 400
+color: red
+visibility: visible
+font-family: Impact
+letter-spacing: 2px
+word-spacing: 0.05px;
+
+custom:
+font-family: Anton
+font-size: 25px
+line-height: 1.5
+font-weight: 400
+letter-spacing: 1.95px
+visibility: visible;
+*/

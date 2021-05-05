@@ -7,12 +7,15 @@
   padding: 114px 5% 5% 5%;
 
   background: #7580bf;
+  background: hsl(231, 37%, 60%);
 }
 #projecten {
   background: #f2dac4;
+  background: hsl(29, 64%, 86%);
 }
 #artikelen {
   background: #f4a82e;
+  background: hsl(37, 90%, 57%);
 }
 .projecten-content,
 .artikelen-content {
@@ -32,6 +35,7 @@ main section,
   gap: 5%;
   min-height: 20px;
   background: #7580bf;
+  background: hsl(231, 37%, 60%);
 }
 
 .page-footer section:first-of-type {
@@ -49,7 +53,7 @@ main section,
     padding: 22% 5% 5% 5%;
   }
 }
-hgroup {
-  max-height: 69vh;
+/* hgroup {
+  max-height: 80vh;
   overflow: hidden;
-}
+} */
