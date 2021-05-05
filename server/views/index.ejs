@@ -2,14 +2,28 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- uncomment in production -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=<%# analytics %>"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', '<%# analytics %>');
+    </script> -->
+
     <meta
       name="keywords"
       content="portfolio, web, web design, front end developer, developer, web designer, web development, development"
@@ -20,74 +34,7 @@
       content="Portfolio website van web-designer en front-end developer Marten de Bruijn"
     />
     <!-- <meta name="theme-color" content="#f4a15d"> -->
-    <!-- icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./icons/favicon-16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./icons/favicon-32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./icons/favicon-96.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./icons/apple-icon-57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./icons/apple-icon-60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./icons/apple-icon-72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./icons/apple-icon-76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./icons/apple-icon-114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./icons/apple-icon-120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./icons/apple-icon-144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./icons/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./icons/apple-icon-180.png"
-    />
-    <!-- <meta name="msapplication-TileColor" content="#00ccff" /> -->
-    <meta name="msapplication-TileImage" content="./icons/apple-icon-144.png" />
+    <%- include('_icons') %>
     <link rel="stylesheet" href="./dist/styles.css" />
     <title>Portfolio van Marten de Bruijn - web design en development</title>
     <style>
@@ -104,26 +51,7 @@
   </head>
   <body>
     <!-- Ik zoek werk! Stuur een mail naar: marten@martendebruijn.nl -->
-    <nav class="page-nav nav-desktop">
-      <ul>
-        <li class="main-nav--home">
-          <a href="/" aria-current="page">Marten de Bruijn</a>
-        </li>
-        <li><a href="#projecten">Projecten</a></li>
-        <li><a href="#artikelen">Artikelen</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <nav class="page-nav nav-mobile">
-      <ul>
-        <li class="mobile-nav__name">
-          <a href="/" aria-current="page">MdB</a>
-        </li>
-        <li><a href="#projecten">Projecten</a></li>
-        <li><a href="#artikelen">Artikelen</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <%- include('_nav') %>
     <div class="content">
       <header class="page-header">
         <hgroup>
@@ -137,6 +65,7 @@
       </header>
       <main>
         <section id="projecten" aria-labelledby="title-projecten">
+          <div class="decorative-title-projecten" aria-hidden=true>Projecten</div>
           <h2 class="h1" id="title-projecten">Geselecteerde projecten</h2>
           <div class="projecten-content">
             <article aria-labelledby="title-ontdek-kunst-bij-kleur">
@@ -151,14 +80,12 @@
                   />
                 </div>
               </header>
-              <p>
-                <strong
-                  >Ontdek Kunst bij Kleur is een webapplicatie waarme je op
+              <p class=bold>
+                  Ontdek Kunst bij Kleur is een webapplicatie waarme je op
                   basis van kleur kunst van het Rijksmuseum kunt ontdekken. De
                   applicatie maakt gebruik van de API van het Rijksmuseum. Bij
                   Ontdek Kunst bij Kleur is Server Side Rendering toegepast en
-                  het is een Progressive Web Application (PWA).</strong
-                >
+                  het is een Progressive Web Application (PWA).
               </p>
               <footer>
                 <ul>
@@ -189,12 +116,10 @@
                   ></iframe>
                 </div>
               </header>
-              <p>
-                <strong>
+              <p class=bold>
                   Hoe kunnen huidige niet-toegankelijke websites toegankelijker
                   gemaakt worden zodat deze beter te gebruiken zijn met een
                   schermlezer door blinden en slechtzienden?
-                </strong>
               </p>
               <p>
                 Producten en diensten worden steeds meer gedigitaliseerd en we
@@ -236,15 +161,13 @@
                   />
                 </div>
               </header>
-              <p>
-                <strong>
+              <p class=bold>
                   Films, TV-series, games, trailers, reclames, sociale media,
                   allemaal voorbeelden van waar muziek gebruikt wordt. De mensen
                   die zoeken naar de perfecte muziek voor bij bewegend beeld
                   zijn music supervisors. Een music supervisor is iemand die
                   muziek zoekt en de juiste mensen weet te benaderen om de
                   juiste licenties te krijgen.
-                </strong>
               </p>
               <p>
                 Het huidige proces vergt veel tijd en is onhandig. Vaak is het
@@ -282,15 +205,13 @@
                   />
                 </div>
               </header>
-              <p>
-                <strong>
+              <p class=bold>
                   Tijdens mijn stage bij Eonics kreeg ik de opdracht om een
                   website te maken voor Aspektu. Aspektu (Latijn voor zicht) is
                   een AR-bril voor slechtziende museumbezoekers. De bril scant
                   een QR-code bij een schilderij en zet dit om in audio. Zo kan
                   deze bril voor de slechtziende medemens via AR een deel van
                   het zicht invullen. Aspektu is bedacht door Kenrick Trip.
-                </strong>
               </p>
               <footer>
                 <ul>
@@ -310,14 +231,12 @@
                   />
                 </div>
               </header>
-              <p>
-                <strong
-                  >Marijn’s Effenaar planner is een drag-and-drop concert
+              <p class=bold>
+                  Marijn’s Effenaar planner is een drag-and-drop concert
                   planner exclusief ontworpen voor Marijn. Marijn heeft een
                   motorische stoornis en veel moeite met fijne motoriek. Deze
                   drag-and-drop is zo ontworpen dat deze voor hem goed te
-                  gebruiken is.</strong
-                >
+                  gebruiken is.
               </p>
               <footer>
                 <ul>
@@ -341,6 +260,7 @@
           </div>
         </section>
         <section id="artikelen" aria-labelledby="title-artikelen">
+          <div class="decorative-title-artikelen" aria-hidden=true>Artikelen</div>
           <h2 class="h1" id="title-artikelen">Laatste artikelen</h2>
           <div class="artikelen-content">
             <article aria-labelledby="title-digitale-toegankelijkheid-waarom">
@@ -394,59 +314,6 @@
         </section>
       </main>
     </div>
-    <footer id="contact" class="page-footer">
-      <section aria-labelledby="title-contact">
-        <h2 id="title-contact">Contact</h2>
-        <address>
-          <ul>
-            <li><a href="mailto:marten@martendebruijn.nl">Mail</a></li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/martendebruijn/"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </address>
-      </section>
-      <section aria-labelledby="title-socials">
-        <h3 class="h2" id="title-socials">Socials</h3>
-        <ul>
-          <li>
-            <a target="_blank" href="https://github.com/martendebruijn"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="https://martendebruijn.medium.com/"
-              >Medium</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="https://codepen.io/martendebruijn"
-              >CodePen</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="https://dribbble.com/martendebruijn"
-              >Dribbble</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="https://www.instagram.com/martenwork/"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://cssbattle.dev/player/martendebruijn"
-              >CSS Battle</a
-            >
-          </li>
-        </ul>
-      </section>
-    </footer>
+    <%- include('_footer') %>
   </body>
 </html>

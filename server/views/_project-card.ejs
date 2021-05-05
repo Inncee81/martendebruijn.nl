@@ -1,0 +1,32 @@
+
+<%- project.id %>
+<%- project.title %>
+<%- project.imgHero.url %>
+<%- project.imgHero.alt %>
+<%- project.links[0].url %>
+<%- project.links[0].name %>
+
+<article aria-labelledby="title-<%- project.id %>">
+  <header>
+    <h3 id="title-<%- project.id %>"><%- project.title %></h3> 
+    <div class="article-hero">
+      <img
+        src="<%- project.imgHero.url %>"
+        alt="<%- project.imgHero.alt %>"
+      />
+    </div>
+  </header>
+  <p class=bold></p>
+  <p></p>
+  <p></p>
+  <footer>
+    <ul>
+      <li>
+        <a
+          target="_blank"
+          href="<%- project.links[0].url %>"
+        ><%- project.links[0].name %></a>
+      </li>
+    </ul>
+  </footer>
+</article>

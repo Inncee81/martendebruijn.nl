@@ -13,17 +13,14 @@ h2,
   padding: 0;
   font-weight: 700;
 }
-
 .page-header h1 {
-  /* font-family: 'Anton', sans-serif; */
   font-size: 11vw;
-  /* letter-spacing: 0.2rem; */
   text-transform: uppercase;
-
-  /* font-size: 25px; */
   line-height: 1.5;
   font-weight: 400;
   visibility: visible;
+  font-family: 'AvenirNext-Bold'; /* delete in production */
+  font-family: 'Arial Black'; /* delete in production */
   font-family: Impact, 'AvenirNext-Bold', 'Arial Black', sans-serif;
   /* Impact and Arial Black are not supported on iOS, AvenirNext-Bold is */
   letter-spacing: 2px;
@@ -38,44 +35,62 @@ h2,
 
 a:link {
   display: inline-block;
-  color: #07288a;
   color: hsl(225, 90%, 28%);
   transition: all 400ms ease-in-out;
 }
 a:visited {
-  color: #32078a;
   color: hsl(260, 90%, 28%);
 }
-
 .page-footer a:link {
-  color: #0b0037;
   color: hsl(252, 100%, 11%);
 }
 .page-footer a:visited {
-  color: #2d0037;
   color: hsl(289, 100%, 11%);
 }
 @media (hover: hover) and (pointer: fine) {
   .page-footer a:hover {
-    color: #370000;
     color: hsl(0, 100%, 11%);
   }
   a:hover {
-    color: #4f1417;
     color: hsl(357, 60%, 19%);
   }
 }
-
 a:active {
-  color: #8a070e;
   color: hsl(357, 90%, 28%);
   transform: scale(0.9);
 }
-
 .page-footer a:active {
-  color: #020000;
   color: hsl(0, 100%, 0%);
 }
 .bold {
   font-weight: 700;
+}
+.page-footer {
+  position: relative;
+}
+#projecten,
+#artikelen {
+  position: relative;
+}
+.decorative-title-projecten,
+.decorative-title-artikelen,
+.decorative-title-footer {
+  display: block;
+
+  position: absolute;
+  top: -10vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+
+  color: #f2dac4;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 10vw;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }

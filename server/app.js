@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express'),
   router = require('./modules/router.js'),
   path = require('path'),
