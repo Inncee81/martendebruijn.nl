@@ -76,23 +76,6 @@ a:active {
   color: #020000;
   color: hsl(0, 100%, 0%);
 }
-
-/* FOUC
-fallback:
-font-size: 25px
-line-height: 1.5
-font-weight: 400
-color: red
-visibility: visible
-font-family: Impact
-letter-spacing: 2px
-word-spacing: 0.05px;
-
-custom:
-font-family: Anton
-font-size: 25px
-line-height: 1.5
-font-weight: 400
-letter-spacing: 1.95px
-visibility: visible;
-*/
+.bold {
+  font-weight: 700;
+}
