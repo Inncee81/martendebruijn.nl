@@ -71,20 +71,18 @@ a:active {
 #projecten,
 #artikelen {
   position: relative;
+  padding: 9% 5% 14% 5%;
 }
-.decorative-title-projecten,
-.decorative-title-artikelen,
-.decorative-title-footer {
+.decorative-title {
   display: block;
 
   position: absolute;
   top: -10vw;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5;
-
-  color: #f2dac4;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 4;
+  font-family: Impact, AvenirNext-Bold, 'Arial Black', sans-serif;
+  font-weight: 700;
   font-size: 10vw;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -93,4 +91,16 @@ a:active {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome, Edge, Opera and Firefox */
+}
+.decorative-title--projecten {
+  color: hsl(29, 64%, 86%);
+}
+.decorative-title--artikelen {
+  color: hsl(37, 90%, 57%);
+}
+.decorative-title--footer {
+  color: hsl(231, 37%, 60%);
+}
+address {
+  font-style: normal;
 }
