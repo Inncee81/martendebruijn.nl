@@ -16,7 +16,7 @@ h2,
 
 .page-header h1 {
   /* font-family: 'Anton', sans-serif; */
-  font-size: 12vw;
+  font-size: 11vw;
   /* letter-spacing: 0.2rem; */
   text-transform: uppercase;
 
@@ -24,7 +24,8 @@ h2,
   line-height: 1.5;
   font-weight: 400;
   visibility: visible;
-  font-family: Impact, sans-serif;
+  font-family: Impact, 'AvenirNext-Bold', 'Arial Black', sans-serif;
+  /* Impact and Arial Black are not supported on iOS, AvenirNext-Bold is */
   letter-spacing: 2px;
   word-spacing: 0.05px;
 }
@@ -74,12 +75,6 @@ a:active {
 .page-footer a:active {
   color: #020000;
   color: hsl(0, 100%, 0%);
-}
-
-@media only screen and (max-width: 500px) {
-  .page-header h1 {
-    font-size: 18vw;
-  }
 }
 
 /* FOUC

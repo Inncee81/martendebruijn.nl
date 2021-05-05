@@ -5,9 +5,9 @@ hgroup {
 .page-header img {
   position: absolute;
   z-index: 1;
-  right: 55px;
-  top: 90px;
-  min-width: 203px;
+  right: 5%;
+  top: 16%;
+  min-width: 120px;
   width: 20%;
   max-width: 300px;
 }
@@ -16,8 +16,8 @@ hgroup {
     position: absolute;
     z-index: 1;
     right: 5%;
-    top: 30%;
-    min-width: 182px;
+    top: 16%;
+    min-width: 120px;
     width: 20%;
     max-width: 300px;
   }

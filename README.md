@@ -32,5 +32,6 @@ Personal portfolio / sandbox to try stuff :)
 - Only load in the Google Fonts that are actually being used
 - Changed all images sizes to the maximum possible size
 - Minified and concatenated CSS
-- Added a max-height and overflow hidden to the hgroup element to prevent content reflow when the Google font for the h1 is being loaded
 - Added compression (NPM package)
+- Changed the main title from Anton (google font) to the web safe font Impact to prevent FAUC
+  - Used this tool [link needed](#) to make a close match with the Anton Font

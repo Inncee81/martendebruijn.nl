@@ -1,10 +1,11 @@
 .content {
   min-height: 100vh;
+  padding-top: 50px;
 }
 .page-header {
   position: relative;
   z-index: 2;
-  padding: 114px 5% 5% 5%;
+  padding: 5%;
 
   background: #7580bf;
   background: hsl(231, 37%, 60%);
@@ -50,10 +51,6 @@ main section,
   }
 
   .page-header {
-    padding: 22% 5% 5% 5%;
+    padding: 9% 5% 5% 5%;
   }
 }
-/* hgroup {
-  max-height: 80vh;
-  overflow: hidden;
-} */

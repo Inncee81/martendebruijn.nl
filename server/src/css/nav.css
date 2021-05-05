@@ -1,12 +1,14 @@
 .page-nav {
   height: 50px;
   width: 100%;
+  border-bottom: 4px solid;
 
   position: fixed;
   z-index: 3;
 
   font-size: 1rem;
   font-weight: 700;
+  background: hsl(231, 37%, 60%);
 }
 .page-nav ul {
   display: flex;
@@ -17,6 +19,9 @@
 .page-nav li {
   padding: 10px;
 }
+.mobile-nav__name {
+  flex: 2;
+}
 @media (hover: hover) and (pointer: fine) {
   .page-nav a:hover {
     text-decoration: underline;
@@ -25,16 +30,14 @@
 .main-nav--home {
   flex: 2;
 }
-.nav-mobile,
-#menu {
+.nav-mobile {
   display: none;
 }
 .nav-desktop {
   display: block;
 }
 @media only screen and (max-width: 500px) {
-  .nav-mobile,
-  #menu {
+  .nav-mobile {
     display: block;
   }
   .nav-mobile ul {
