@@ -38,3 +38,18 @@ Personal portfolio / sandbox to try stuff :)
 - Changed the main title from Anton (google font) to the web safe font Impact to prevent FAUC
   - Used this tool [link needed](#) to make a close match with the Anton Font
   - [ios fonts](http://iosfonts.com/)
+
+PWA SW:
+chrome devtools Slow 3G first time (no caching of all images): \
+Load 15.39s \
+After caching: \
+Load 1.08s
+
+#
+
+icons to add to manifest:\
+
+- 128
+- 192
+- 384
+- 512

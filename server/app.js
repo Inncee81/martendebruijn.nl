@@ -14,5 +14,8 @@ app
   .set('views', __dirname + '/views/')
   .set('view engine', 'ejs')
   .get('/', router.home);
+app.get('/fallback', (req, res) => {
+  res.render('fallback', {});
+});
 
 app.listen(port, () => console.log(`App listening on port ${port}`));
