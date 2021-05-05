@@ -5,6 +5,8 @@ Personal portfolio / sandbox to try stuff :)
 ✅ index.html checked with [HTML validator](https://validator.w3.org/) and resulted without any errors or warnings (04/05/2021) \
 ✅ Validated with the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/): CSS level 3 + SVG without errors (04/05/2021)
 
+- keyboard accessible
+
 ## Colour Contrast
 
 | BG                 | FG                  | Contrast | Notes                                         | AA Large | AAA Large | AA Normal | AAA Normal |
@@ -35,3 +37,4 @@ Personal portfolio / sandbox to try stuff :)
 - Added compression (NPM package)
 - Changed the main title from Anton (google font) to the web safe font Impact to prevent FAUC
   - Used this tool [link needed](#) to make a close match with the Anton Font
+  - [ios fonts](http://iosfonts.com/)

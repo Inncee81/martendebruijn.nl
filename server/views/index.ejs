@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang=nl>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- uncomment in production -->
-    <!-- <script
+    <meta name=viewport content="width=device-width, initial-scale=1.0" />
+    <link rel=preconnect href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel=stylesheet />
+    <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=<%# analytics %>"
+      src="https://www.googletagmanager.com/gtag/js?id=<%- analytics %>"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -21,21 +17,21 @@
       }
       gtag('js', new Date());
 
-      gtag('config', '<%# analytics %>');
-    </script> -->
+      gtag('config', '<%- analytics %>');
+    </script>
 
     <meta
-      name="keywords"
+      name=keywords
       content="portfolio, web, web design, front end developer, developer, web designer, web development, development"
     />
-    <meta name="author" content="Marten de Bruijn" />
+    <meta name=author content="Marten de Bruijn" />
     <meta
-      name="description"
+      name=description
       content="Portfolio website van web-designer en front-end developer Marten de Bruijn"
     />
     <!-- <meta name="theme-color" content="#f4a15d"> -->
     <%- include('_icons') %>
-    <link rel="stylesheet" href="./dist/styles.css" />
+    <link rel=stylesheet href="./dist/styles.css" />
     <title>Portfolio van Marten de Bruijn - web design en development</title>
     <style>
       a:link {
@@ -52,8 +48,8 @@
   <body>
     <!-- Ik zoek werk! Stuur een mail naar: marten@martendebruijn.nl -->
     <%- include('_nav') %>
-    <div class="content">
-      <header class="page-header">
+    <div class=content>
+      <header class="page-header" role=banner>
         <hgroup>
           <h1>Portfolio van Marten de Bruijn</h1>
           <h2>Web-designer en front-end developer</h2>
@@ -63,8 +59,8 @@
           alt="Portretfoto van Marten de Bruijn"
         />
       </header>
-      <main>
-        <section id="projecten" aria-labelledby="title-projecten">
+      <main role=main>
+        <section id=projecten aria-labelledby="title-projecten">
           <div class="decorative-title decorative-title--projecten" aria-hidden=true>Projecten</div>
           <h2 class="h1" id="title-projecten">Geselecteerde projecten</h2>
           <div class="projecten-content">
@@ -259,7 +255,7 @@
             </article>
           </div>
         </section>
-        <section id="artikelen" aria-labelledby="title-artikelen">
+        <section id=artikelen aria-labelledby="title-artikelen">
           <div class="decorative-title decorative-title--artikelen" aria-hidden=true>Artikelen</div>
           <h2 class="h1" id="title-artikelen">Laatste artikelen</h2>
           <div class="artikelen-content">
@@ -281,7 +277,7 @@
                 <a
                   target="_blank"
                   href="https://martendebruijn.medium.com/digitale-toegankelijkheid-waarom-ef32da749ace"
-                  >Lees meer op Medium</a
+                  >Lees verder op Medium</a
                 >
               </footer>
             </article>
@@ -306,7 +302,7 @@
                 <a
                   target="_blank"
                   href="https://martendebruijn.medium.com/mmcss-oplossing-voor-hover-op-touchscreens-86903e2ff02e"
-                  >Lees meer op Medium</a
+                  >Lees verder op Medium</a
                 >
               </footer>
             </article>

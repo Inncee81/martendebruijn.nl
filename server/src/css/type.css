@@ -19,8 +19,6 @@ h2,
   line-height: 1.5;
   font-weight: 400;
   visibility: visible;
-  font-family: 'AvenirNext-Bold'; /* delete in production */
-  font-family: 'Arial Black'; /* delete in production */
   font-family: Impact, 'AvenirNext-Bold', 'Arial Black', sans-serif;
   /* Impact and Arial Black are not supported on iOS, AvenirNext-Bold is */
   letter-spacing: 2px;
